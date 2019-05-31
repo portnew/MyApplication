@@ -13,6 +13,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button button_1;
+    private Button button_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,ButtonActivity.class);
+                startActivity(intent);
+            }
+        });
+        button_2 = findViewById(R.id.btn_2);
+        button_2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,EditTextActivity.class);
                 startActivity(intent);
             }
         });

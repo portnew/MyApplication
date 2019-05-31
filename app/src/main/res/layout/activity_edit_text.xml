@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:hint="User"
+        android:background="@drawable/bg_username"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="5dp"
+        />
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:hint="PhoneNumber"
+        android:layout_below="@id/et_1"
+        android:background="@drawable/bg_username"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="8dp"
+
+        />
+
+    <EditText
+        android:id="@+id/et_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/et_2"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_username"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="8dp"
+
+        />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_3"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_btn4"
+        />
+
+
+</RelativeLayout>
