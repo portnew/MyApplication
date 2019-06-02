@@ -21,16 +21,40 @@
     android:layout_marginRight="5dp"
     android:background="@color/design_default_color_primary"/>
     <Button
-        android:id="@+id/btn_2"
+    android:id="@+id/btn_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="EditText"
+
+    android:textColor="#ffffff"
+    android:textSize="40sp"
+    android:textAllCaps="false"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#000000"/>
+    <Button
+        android:id="@+id/btn_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="EditText"
-
+        android:text="RadioButton"
         android:textColor="#ffffff"
         android:textSize="40sp"
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:background="#000000"/>
+        android:background="#3db8c1"/>
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBoxButton"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#f5222d"/>
 </LinearLayout>

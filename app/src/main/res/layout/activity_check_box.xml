@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".CheckBoxActivity">
+<TextView
+    android:id="@+id/textView_1"
+    android:text="你会哪些移动开发技能？"
+    android:textSize="30sp"
+    android:textColor="#08979c"
+    android:layout_marginBottom="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/checkBox_1"
+        android:layout_below="@id/textView_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="54dp" />
+    <CheckBox
+        android:id="@+id/checkBox_2"
+        android:layout_below="@id/checkBox_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ios"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="54dp" />
+    <CheckBox
+        android:id="@+id/checkBox_3"
+        android:layout_below="@id/checkBox_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HTML5"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="54dp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/checkBox_3"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView_2"
+            android:text="你喜欢下面哪个品牌？"
+            android:textSize="30sp"
+            android:textColor="#eb2f96"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/checkBox_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="马自达"
+            android:button="@drawable/bg_checkbox"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="54dp" />
+        <CheckBox
+            android:id="@+id/checkBox_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奔驰"
+            android:button="@drawable/bg_checkbox"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="54dp" />
+        <CheckBox
+            android:id="@+id/checkBox_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雅迪"
+            android:button="@drawable/bg_checkbox"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+    </LinearLayout>
+</RelativeLayout>
