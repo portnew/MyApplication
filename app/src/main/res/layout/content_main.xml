@@ -46,15 +46,39 @@
         android:layout_marginRight="5dp"
         android:background="#3db8c1"/>
     <Button
-        android:id="@+id/btn_4"
+    android:id="@+id/btn_4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="CheckBoxButton"
+    android:textColor="#ffffff"
+    android:textSize="40sp"
+    android:textAllCaps="false"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#f5222d"/>
+    <Button
+        android:id="@+id/btn_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CheckBoxButton"
+        android:text="www.baidu.com"
         android:textColor="#ffffff"
         android:textSize="40sp"
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:background="#f5222d"/>
+        android:background="#f5662d"/>
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ImageView"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#f566ff"/>
 </LinearLayout>
