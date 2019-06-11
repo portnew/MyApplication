@@ -14,8 +14,10 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.myapplication.listview.ListViewActivity;
+
 public class MainActivity extends AppCompatActivity {
-    private Button button_1,button_2,button_3,button_4,button_5,button_6;
+    private Button button_1,button_2,button_3,button_4,button_5,button_6,button_7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         button_4 = findViewById(R.id.btn_4);
         button_5 = findViewById(R.id.btn_5);
         button_6 = findViewById(R.id.btn_6);
+        button_7 = findViewById(R.id.btn_7);
         setListeners();
 
         /*button_1.setOnClickListener(new View.OnClickListener(){
@@ -71,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
       button_4.setOnClickListener(onClick);
       button_5.setOnClickListener(onClick);
       button_6.setOnClickListener(onClick);
+      button_7.setOnClickListener(onClick);
 
 
     }
@@ -98,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_6:
                     intent = new Intent(MainActivity.this,ImageViewActivity.class);
+                    break;
+                case R.id.btn_7:
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
                     break;
             }
             startActivity(intent);
