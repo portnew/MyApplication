@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
 <Button
     android:id="@+id/btn_1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Button"
     android:textColor="#ffffff"
-    android:textSize="40sp"
+    android:textSize="30sp"
     android:textAllCaps="false"
     android:layout_marginTop="10dp"
     android:layout_marginLeft="5dp"
@@ -25,9 +30,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="EditText"
-
     android:textColor="#ffffff"
-    android:textSize="40sp"
+    android:textSize="30sp"
     android:textAllCaps="false"
     android:layout_marginTop="10dp"
     android:layout_marginLeft="5dp"
@@ -39,7 +43,7 @@
         android:layout_height="wrap_content"
         android:text="RadioButton"
         android:textColor="#ffffff"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
@@ -51,7 +55,7 @@
     android:layout_height="wrap_content"
     android:text="CheckBoxButton"
     android:textColor="#ffffff"
-    android:textSize="40sp"
+    android:textSize="30sp"
     android:textAllCaps="false"
     android:layout_marginTop="10dp"
     android:layout_marginLeft="5dp"
@@ -63,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="www.baidu.com"
         android:textColor="#ffffff"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
@@ -75,7 +79,7 @@
         android:layout_height="wrap_content"
         android:text="ImageView"
         android:textColor="#ffffff"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
@@ -87,7 +91,7 @@
         android:layout_height="wrap_content"
         android:text="ListView"
         android:textColor="#ffffff"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
@@ -99,10 +103,23 @@
         android:layout_height="wrap_content"
         android:text="GridView"
         android:textColor="#ffffff"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="@color/colorGrey"/>
-</LinearLayout>
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScrollViewTest"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorGrey"/>
+    </LinearLayout>
+</ScrollView>
