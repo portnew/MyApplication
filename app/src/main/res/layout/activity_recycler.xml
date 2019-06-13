@@ -8,5 +8,6 @@
         android:id="@+id/btn_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="列表视图"/>
+        android:text="列表视图"
+        />
 </LinearLayout>
