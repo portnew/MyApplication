@@ -6,18 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.myapplication.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.ViewHolder> {
+public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.ViewHolder> {
 
     List<String> stringList;
     onItemClickListener listener;
-    public LinearAdapter(List<String> list ,onItemClickListener listener){
+
+    public HorizontalAdapter(List<String> list , onItemClickListener listener){
         this.stringList = list;
         this.listener = listener;
     }
@@ -28,13 +27,13 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.ViewHolder
         TextView textView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.text_view_item);
+            textView = itemView.findViewById(R.id.text_view_horizontal_item);
         }
     }
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_linear_item,viewGroup,false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_horizontal_item,viewGroup,false);
         ViewHolder holder = new ViewHolder(view);
 
         return holder;

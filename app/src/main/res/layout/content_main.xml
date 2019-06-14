@@ -109,6 +109,18 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="@color/colorGrey"/>
+   <Button
+            android:id="@+id/btn_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorGrey"/>
     <Button
         android:id="@+id/btn_9"
         android:layout_width="match_parent"
@@ -121,5 +133,6 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="@color/colorGrey"/>
+
     </LinearLayout>
 </ScrollView>

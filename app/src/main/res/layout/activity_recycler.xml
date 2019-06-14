@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     >
 
     <Button
@@ -9,5 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="列表视图"
+        android:textSize="20sp"
+        android:background="#91d5ff"
+        android:layout_marginTop="10dp"
+
+        />
+    <Button
+        android:id="@+id/btn_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="水平滚动"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:background="#d3f261"
+
+
         />
 </LinearLayout>
