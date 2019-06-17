@@ -10,7 +10,7 @@ import com.example.myapplication.R;
 
 public class RecyclerActivity extends AppCompatActivity {
 
-    private Button btn_linear,btn_horizontal;
+    private Button btn_linear,btn_horizontal,btn_grid,btn_stagger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,24 @@ public class RecyclerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RecyclerActivity.this,HorizontalRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_grid = findViewById(R.id.btn_grid);
+        btn_grid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclerActivity.this,GridRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_stagger = findViewById(R.id.btn_stagger);
+        btn_stagger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclerActivity.this,StaggerActivity.class);
                 startActivity(intent);
             }
         });

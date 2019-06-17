@@ -20,10 +20,13 @@ public class HorizontalRecyclerViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_horizontal_recycler_view);
 
         recyclerView = findViewById(R.id.recycler_horizontal);
+
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(layoutManager);
+
         initList();
+
         recyclerView.setAdapter(new HorizontalAdapter(list, new HorizontalAdapter.onItemClickListener() {
             @Override
             public void onClick(int pos) {
