@@ -10,7 +10,7 @@ import com.example.myapplication.R;
 
 public class RecyclerActivity extends AppCompatActivity {
 
-    private Button btn_linear,btn_horizontal,btn_grid,btn_stagger;
+    private Button btn_linear,btn_horizontal,btn_grid,btn_stagger,btn_viewholder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,14 @@ public class RecyclerActivity extends AppCompatActivity {
 
         btn_stagger = findViewById(R.id.btn_stagger);
         btn_stagger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclerActivity.this,StaggerActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn_viewholder = findViewById(R.id.btn_viewholder);
+        btn_viewholder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RecyclerActivity.this,StaggerActivity.class);

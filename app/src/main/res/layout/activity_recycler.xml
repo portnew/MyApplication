@@ -38,13 +38,25 @@
 
         />
     <Button
-        android:id="@+id/btn_stagger"
+    android:id="@+id/btn_stagger"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="瀑布流"
+    android:textSize="20sp"
+    android:layout_marginTop="10dp"
+    android:background="#d3f261"
+
+
+    />
+    <Button
+        android:id="@+id/btn_viewholder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="瀑布流"
+        android:text="多ViewHolder"
+        android:textAllCaps="false"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
-        android:background="#d3f261"
+        android:background="#91d5ff"
 
 
         />
