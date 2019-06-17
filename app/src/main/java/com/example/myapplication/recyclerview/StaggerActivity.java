@@ -32,10 +32,10 @@ public class StaggerActivity extends AppCompatActivity {
 
     }
     void initList(){
-        for (int i=0;i<20;i++){
+        for (int i=0;i<50;i++){
 
-            list.add("hello"+i);
-            list.add("hello"+i+i+i+i+i+i+i+i+i+i);
+            //list.add("hello"+i);
+            list.add("hello"+i+i*i+i+i+i+i+i+i+i+i);
         }
 
     }
