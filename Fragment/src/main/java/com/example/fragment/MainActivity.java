@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     }
     private void replaceFragment(Fragment fragment){
-        FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.right_layout,fragment);
-        //模拟添加到返回栈
-        transaction.addToBackStack(null);
-        transaction.commit();
+//        FragmentManager manager = getSupportFragmentManager();
+//        FragmentTransaction transaction = manager.beginTransaction();
+//        transaction.replace(R.id.right_layout,fragment);
+//        //模拟添加到返回栈
+//        transaction.addToBackStack(null);
+//        transaction.commit();
     }
 
 
