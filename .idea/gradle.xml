@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Fragment" />
+            <option value="$PROJECT_DIR$/Fragmentapplication" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/myui" />
           </set>

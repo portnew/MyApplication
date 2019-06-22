@@ -1,1 +1,1 @@
-include ':app', ':myui', ':Fragment'
+include ':app', ':myui', ':Fragment', ':Fragmentapplication'
