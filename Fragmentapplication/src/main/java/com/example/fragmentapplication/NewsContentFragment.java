@@ -21,8 +21,10 @@ public class NewsContentFragment extends Fragment {
     public void refresh(String newsTitle, String newsContent){
         View visibilityLayout = view.findViewById(R.id.visibility_layout);
         visibilityLayout.setVisibility(View.VISIBLE);
+
         TextView title = view.findViewById(R.id.news_title);
         TextView content = view.findViewById(R.id.news_content);
+
         title.setText(newsTitle);
         content.setText(newsContent);
     }

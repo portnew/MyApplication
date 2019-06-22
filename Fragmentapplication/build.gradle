@@ -13,6 +13,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
 
     }
 
@@ -36,6 +37,6 @@ dependencies {
     // https://mvnrepository.com/artifact/com.android.support/design
     implementation group: 'com.android.support', name: 'design', version: '28.0.0'
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
-    implementation group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
 
 }

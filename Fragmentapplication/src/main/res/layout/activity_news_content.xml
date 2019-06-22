@@ -5,7 +5,7 @@
     android:orientation="vertical"
     >
     <fragment
-        android:id="@+id/news_content_fragment"
+        android:id="@+id/news_content_for_single"
         android:name="com.example.fragmentapplication.NewsContentFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
