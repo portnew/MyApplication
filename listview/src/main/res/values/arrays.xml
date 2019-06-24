@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="ctype">
+
+    <item>All</item>
+    <item>风在吹</item>
+    <item>天山</item>
+    <item>故国</item>
+    <item>飞花</item>
+
+</string-array>
+
+</resources>
