@@ -45,4 +45,14 @@
         android:textSize="18sp"
         android:layout_margin="5dp"
         android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_dialog5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="style5"
+        android:background="#B43A3A"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:textAllCaps="false"/>
 </LinearLayout>
