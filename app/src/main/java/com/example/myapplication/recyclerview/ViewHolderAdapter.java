@@ -12,7 +12,7 @@ import com.example.myapplication.R;
 
 import java.util.List;
 
-public class ViewHolderAdapter extends RecyclerView.Adapter<ViewHolder> {
+public class ViewHolderAdapter extends RecyclerView.Adapter<ViewHolderAdapter.ViewHolder> {
 
     List<String> stringList;
     onItemClickListener listener;
@@ -28,13 +28,12 @@ public class ViewHolderAdapter extends RecyclerView.Adapter<ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         if (i==0){
             View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_linear_item,viewGroup,false);
-            Viewholder1 holder = new ViewHolder1(view);
-
+            ViewHolder holder = new ViewHolder(view);
             return holder;
         }else{
             View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_linear_item2,viewGroup,false);
-            Viewholder2 holder = new ViewHolder2(view);
 
+            ViewHolder holder = new ViewHolder(view);
             return holder;
         }
 
@@ -72,29 +71,17 @@ public class ViewHolderAdapter extends RecyclerView.Adapter<ViewHolder> {
        void onClick(int pos);
     }
 
-
-
-
-    }
-    class ViewHolder2 extends ViewHolder{
-
+    class ViewHolder extends RecyclerView.ViewHolder{
         TextView textView;
-        ImageView imageView;
-        public ViewHolder2(@NonNull View itemView) {
+
+        public ViewHolder(@NonNull View itemView) {
+
             super(itemView);
             textView = itemView.findViewById(R.id.text_view_item);
-            itemView = imageView.findViewById(R.id.image);
         }
     }
 
-    class Viewholder1 extends ViewHolder{
-        TextView textView;
 
-
-        public Viewholder1(@NonNull View itemView) {
-            super(itemView);
-            textView = itemView.findViewById(R.id.text_view_item);
-
-        }
     }
-}
+
+

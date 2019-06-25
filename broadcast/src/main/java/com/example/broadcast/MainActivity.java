@@ -1,6 +1,7 @@
 package com.example.broadcast;
 
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -26,11 +27,21 @@ public class MainActivity extends AppCompatActivity {
 
         registerReceiver(receiver,intentFilter);*/
 
+
         Button button = findViewById(R.id.btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent("com.example.broadcast.MY_BROADCAST");
+                Intent intent = new Intent();
+                intent.setAction("com.example.broadcast.MY_BROADCAST");
+                //方式一
+                intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
+                intent.setPackage("com.example.broadcast");
+
+                //方式二
+                //intent.setComponent(new ComponentName("com.example.broadcast","com.example.broadcast.MyBroadcastReceiver"));
+
+
                 sendBroadcast(intent);
             }
         });

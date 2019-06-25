@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.broadcast">
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    package="com.example.broadcast2">
 
     <application
         android:allowBackup="true"
@@ -14,16 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
         <receiver
-            android:name=".MyBroadcastReceiver"
+            android:name=".MyReceiver2"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.example.broadcast.MY_BROADCAST"/>
             </intent-filter>
         </receiver>
-
 
         <activity android:name=".MainActivity">
             <intent-filter>

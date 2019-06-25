@@ -19,7 +19,8 @@ import com.example.myapplication.listview.ListViewActivity;
 import com.example.myapplication.recyclerview.RecyclerActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,button_10;
+    private Button button_1,button_2,button_3,button_4,button_5,button_6,button_7,
+            button_8,button_10,button_11,button_12,button_13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
         button_7 = findViewById(R.id.btn_7);
         button_8 = findViewById(R.id.btn_8);
         button_10 = findViewById(R.id.btn_10);
+        button_11 = findViewById(R.id.btn_11);
+        button_12 = findViewById(R.id.btn_12);
+        button_13 = findViewById(R.id.btn_13);
+
+
+
         setListeners();
 
         /*button_1.setOnClickListener(new View.OnClickListener(){
@@ -70,6 +77,11 @@ public class MainActivity extends AppCompatActivity {
       button_7.setOnClickListener(onClick);
       button_8.setOnClickListener(onClick);
       button_10.setOnClickListener(onClick);
+      button_11.setOnClickListener(onClick);
+      button_12.setOnClickListener(onClick);
+      button_13.setOnClickListener(onClick);
+
+
 
 
     }
@@ -106,6 +118,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_10:
                     intent = new Intent(MainActivity.this, RecyclerActivity.class);
+                    break;
+                case R.id.btn_11:
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    break;
+                case R.id.btn_12:
+                    intent = new Intent(MainActivity.this, ToastActivity.class);
+                    break;
+                case R.id.btn_13:
+                    intent = new Intent(MainActivity.this, AlertDialogActivity.class);
                     break;
             }
             startActivity(intent);

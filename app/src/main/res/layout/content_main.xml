@@ -121,6 +121,42 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:background="@color/colorGrey"/>
+        <Button
+            android:id="@+id/btn_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WebView"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#887652"/>
+        <Button
+            android:id="@+id/btn_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#0E2C80"/>
+        <Button
+            android:id="@+id/btn_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#881FCC"/>
     <Button
         android:id="@+id/btn_9"
         android:layout_width="match_parent"
@@ -133,6 +169,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="@color/colorGrey"/>
+
 
     </LinearLayout>
 </ScrollView>

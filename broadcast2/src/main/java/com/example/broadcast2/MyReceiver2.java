@@ -1,17 +1,14 @@
-package com.example.broadcast;
+package com.example.broadcast2;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.widget.Toast;
 
-public class MyBroadcastReceiver extends BroadcastReceiver {
+public class MyReceiver2 extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-
-        Toast.makeText(context,"received in 自定义广播接收器", Toast.LENGTH_SHORT).show();
-
+        Toast.makeText(context,"跨了，跨了", Toast.LENGTH_SHORT).show();
     }
 }

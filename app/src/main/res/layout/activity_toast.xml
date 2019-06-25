@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToastActivity">
+
+    <Button
+        android:id="@+id/btn_toast_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="#3F51B5"/>
+    <Button
+        android:id="@+id/btn_toast_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Position"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="#FF5722"/>
+    <Button
+        android:id="@+id/btn_toast_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="With pic"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="#45B31D"/>
+    <Button
+        android:id="@+id/btn_toast_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="封装"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="#B39F1D"/>
+</LinearLayout>
