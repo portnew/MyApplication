@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.example.myapplication.utils.ToastUtils;
 
@@ -100,12 +102,27 @@ public class AlertDialogActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_dialog5:
                     //自定义
-                    AlertDialog.Builder builder4 = new AlertDialog.Builder(AlertDialogActivity.this);
+                    final AlertDialog.Builder builder4 = new AlertDialog.Builder(AlertDialogActivity.this);
                     View view = LayoutInflater.from(AlertDialogActivity.this).inflate(R.layout.layout_dialog,null);
                     EditText username = view.findViewById(R.id.dialog_username);
                     EditText password = view.findViewById(R.id.dialog_password);
-                    Button login = view.findViewById(R.id.login);
-                    builder4.setTitle("请登录").setView(view).show();
+                    final Button login = view.findViewById(R.id.login);
+                    ImageButton close = view.findViewById(R.id.dialog_imagebutton);
+                    //注意show方法，返回的是AlertDialog对象，获取对象，便于进一步处理
+                    final AlertDialog dialog = builder4.setView(view).setCancelable(false).show();
+                    close.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                        }
+                    });
+                    login.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                        }
+                    });
+
                     break;
 
             }
