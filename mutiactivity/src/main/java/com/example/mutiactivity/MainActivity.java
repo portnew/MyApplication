@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,HeadActivity.class);
+               //直接跳转
+               // startActivity(intent);
+                //带返回跳转
                 startActivityForResult(intent,1);
             }
         });
@@ -27,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode==1&&requestCode==1){
+        if (requestCode==1&&resultCode==1){
             Bundle extras = data.getExtras();
             int imageId = extras.getInt("imageId");
             ImageView imageView = findViewById(R.id.head);

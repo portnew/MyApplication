@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         GridView gridView = findViewById(R.id.gridview);
-        List<Map<String,Object>> list = new ArrayList<>();
+//        List<Map<String,Object>> list = new ArrayList<>();
 
        /* for (int i=0;i<pics.length;i++){
             Map<String,Object> map = new HashMap<>();
