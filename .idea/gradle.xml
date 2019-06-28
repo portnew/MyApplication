@@ -13,12 +13,15 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/broadcast" />
             <option value="$PROJECT_DIR$/broadcast2" />
+            <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/gridview" />
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/mutiactivity" />
             <option value="$PROJECT_DIR$/myui" />
             <option value="$PROJECT_DIR$/scrollview" />
+            <option value="$PROJECT_DIR$/shareepreferences" />
             <option value="$PROJECT_DIR$/spinner" />
+            <option value="$PROJECT_DIR$/sqlite" />
             <option value="$PROJECT_DIR$/tab" />
             <option value="$PROJECT_DIR$/wechat" />
           </set>
