@@ -1,21 +1,28 @@
 package com.example.wechat;
 
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.FrameLayout;
 
 public class MainActivity extends AppCompatActivity {
     Button btn1,btn2,btn3,btn4;
+    FrameLayout frameLayout = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //初始化默认显示fragment_1
+        frameLayout = findViewById(R.id.fragment_container);
+        if (frameLayout!=null) {
+           getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,new Fragment_1()).commit();
+
+        }
+
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
@@ -33,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
+               // transaction.add(R.id.fragment_container, new Fragment_1());
                 Fragment fragment = null;
                 switch (view.getId()) {
                     case R.id.btn1:
@@ -53,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
-                transaction.replace(R.id.fragment_base,fragment);
+                transaction.replace(R.id.fragment_container,fragment);
                 transaction.commit();
             }
         }

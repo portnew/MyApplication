@@ -12,7 +12,7 @@ public class Fragment_base extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-       View view = inflater.inflate(R.layout.layout_frag1,container,false);
+       View view = inflater.inflate(R.layout.layout_frag_base,container,false);
 
         return view;
     }
