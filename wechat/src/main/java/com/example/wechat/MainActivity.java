@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     Button btn1,btn2,btn3,btn4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,29 +20,20 @@ public class MainActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
         btn4 = findViewById(R.id.btn4);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                Fragment fragment = manager.findFragmentById(R.id.fragment_base);
-//                transaction.replace(R.id.fragment_base, new Fragment_2());
-                transaction.remove(fragment);
-                transaction.commit();
-            }
-        });
-//        OnClick onClick = new OnClick();
-//        btn1.setOnClickListener(onClick);
-//        btn2.setOnClickListener(onClick);
-//        btn3.setOnClickListener(onClick);
-//        btn4.setOnClickListener(onClick);
+
+        OnClick onClick = new OnClick();
+        btn1.setOnClickListener(onClick);
+        btn2.setOnClickListener(onClick);
+        btn3.setOnClickListener(onClick);
+        btn4.setOnClickListener(onClick);
 
     }
-        /*class OnClick implements View.OnClickListener {
+        class OnClick implements View.OnClickListener {
 
             @Override
             public void onClick(View view) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
                 Fragment fragment = null;
                 switch (view.getId()) {
                     case R.id.btn1:
@@ -61,12 +51,11 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new Fragment_4();
 
                         break;
-                    default:
-                        break;
+
                 }
-                transaction.replace(R.id.fragment_base, fragment);
+                transaction.replace(R.id.fragment_base,fragment);
                 transaction.commit();
             }
-        }*/
+        }
     }
 
