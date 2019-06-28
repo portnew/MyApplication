@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/scrollview" />
             <option value="$PROJECT_DIR$/spinner" />
             <option value="$PROJECT_DIR$/tab" />
+            <option value="$PROJECT_DIR$/wechat" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
