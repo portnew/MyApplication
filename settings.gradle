@@ -1,1 +1,1 @@
-include ':app', ':myui', ':Fragment', ':Fragmentapplication', ':gridview', ':spinner', ':listview', ':scrollview', ':tab', ':broadcast', ':broadcast2', ':mutiactivity', ':wechat', ':data', ':shareepreferences', ':sqlite'
+include ':app', ':myui', ':Fragment', ':Fragmentapplication', ':gridview', ':spinner', ':listview', ':scrollview', ':tab', ':broadcast', ':broadcast2', ':mutiactivity', ':wechat', ':data', ':shareepreferences', ':sqlite', ':intent'

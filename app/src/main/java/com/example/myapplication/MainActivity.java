@@ -14,13 +14,15 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.myapplication.event.EventActivity;
+import com.example.myapplication.event.EventMainActivity;
 import com.example.myapplication.gridview.GridViewActivity;
 import com.example.myapplication.listview.ListViewActivity;
 import com.example.myapplication.recyclerview.RecyclerActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button_1,button_2,button_3,button_4,button_5,button_6,button_7,
-            button_8,button_10,button_11,button_12,button_13;
+    private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
+            button_8, button_10, button_11, button_12, button_13, button_14;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         button_11 = findViewById(R.id.btn_11);
         button_12 = findViewById(R.id.btn_12);
         button_13 = findViewById(R.id.btn_13);
-
+        button_14 = findViewById(R.id.btn_14);
 
 
         setListeners();
@@ -66,49 +68,50 @@ public class MainActivity extends AppCompatActivity {
         });*/
 
     }
-    private void setListeners(){
-      OnClick  onClick = new OnClick();
-      button_1.setOnClickListener(onClick);
-      button_2.setOnClickListener(onClick);
-      button_3.setOnClickListener(onClick);
-      button_4.setOnClickListener(onClick);
-      button_5.setOnClickListener(onClick);
-      button_6.setOnClickListener(onClick);
-      button_7.setOnClickListener(onClick);
-      button_8.setOnClickListener(onClick);
-      button_10.setOnClickListener(onClick);
-      button_11.setOnClickListener(onClick);
-      button_12.setOnClickListener(onClick);
-      button_13.setOnClickListener(onClick);
 
-
+    private void setListeners() {
+        OnClick onClick = new OnClick();
+        button_1.setOnClickListener(onClick);
+        button_2.setOnClickListener(onClick);
+        button_3.setOnClickListener(onClick);
+        button_4.setOnClickListener(onClick);
+        button_5.setOnClickListener(onClick);
+        button_6.setOnClickListener(onClick);
+        button_7.setOnClickListener(onClick);
+        button_8.setOnClickListener(onClick);
+        button_10.setOnClickListener(onClick);
+        button_11.setOnClickListener(onClick);
+        button_12.setOnClickListener(onClick);
+        button_13.setOnClickListener(onClick);
+        button_14.setOnClickListener(onClick);
 
 
     }
-    public class OnClick implements View.OnClickListener{
+
+    public class OnClick implements View.OnClickListener {
 
         @Override
         public void onClick(View v) {
-            Intent intent=null;
-            switch (v.getId()){
+            Intent intent = null;
+            switch (v.getId()) {
                 case R.id.btn_1:
-                    intent = new Intent(MainActivity.this,ButtonActivity.class);
+                    intent = new Intent(MainActivity.this, ButtonActivity.class);
                     break;
                 case R.id.btn_2:
-                    intent = new Intent(MainActivity.this,EditTextActivity.class);
+                    intent = new Intent(MainActivity.this, EditTextActivity.class);
                     break;
                 case R.id.btn_3:
-                    intent = new Intent(MainActivity.this,RadioButtonActivity.class);
+                    intent = new Intent(MainActivity.this, RadioButtonActivity.class);
                     break;
                 case R.id.btn_4:
-                    intent = new Intent(MainActivity.this,CheckBoxActivity.class);
+                    intent = new Intent(MainActivity.this, CheckBoxActivity.class);
                     break;
                 case R.id.btn_5:
                     intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse("http://www.baidu.com"));
                     break;
                 case R.id.btn_6:
-                    intent = new Intent(MainActivity.this,ImageViewActivity.class);
+                    intent = new Intent(MainActivity.this, ImageViewActivity.class);
                     break;
                 case R.id.btn_7:
                     intent = new Intent(MainActivity.this, ListViewActivity.class);
@@ -128,6 +131,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_13:
                     intent = new Intent(MainActivity.this, AlertDialogActivity.class);
                     break;
+                case R.id.btn_14:
+                    intent = new Intent(MainActivity.this, EventMainActivity.class);
+                    break;
             }
             startActivity(intent);
         }
@@ -144,12 +150,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         //为菜单注册事件
         int id = item.getItemId();
-        switch (id){
+        switch (id) {
             case R.id.action_settings:
-                Toast.makeText(this,"You click settings",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "You click settings", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.remove_item:
-                Toast.makeText(this,"You click remove",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "You click remove", Toast.LENGTH_SHORT).show();
                 break;
         }
         return super.onOptionsItemSelected(item);

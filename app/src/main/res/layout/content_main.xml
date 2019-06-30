@@ -7,168 +7,193 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
-<Button
-    android:id="@+id/btn_1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Button"
-    android:textColor="#ffffff"
-    android:textSize="30sp"
-    android:textAllCaps="false"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:background="@color/design_default_color_primary"/>
-    <Button
-    android:id="@+id/btn_2"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="EditText"
-    android:textColor="#ffffff"
-    android:textSize="30sp"
-    android:textAllCaps="false"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:background="#000000"/>
-    <Button
-        android:id="@+id/btn_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RadioButton"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="#3db8c1"/>
-    <Button
-    android:id="@+id/btn_4"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="CheckBoxButton"
-    android:textColor="#ffffff"
-    android:textSize="30sp"
-    android:textAllCaps="false"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:background="#f5222d"/>
-    <Button
-        android:id="@+id/btn_5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="www.baidu.com"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="#f5662d"/>
-    <Button
-        android:id="@+id/btn_6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ImageView"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="#f566ff"/>
-    <Button
-        android:id="@+id/btn_7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ListView"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="#69c0ff"/>
-    <Button
-        android:id="@+id/btn_8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="GridView"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@color/colorGrey"/>
-   <Button
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/design_default_color_primary"
+            android:text="Button"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#000000"
+            android:text="EditText"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#3db8c1"
+            android:text="RadioButton"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#f5222d"
+            android:text="CheckBoxButton"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#f5662d"
+            android:text="www.baidu.com"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#f566ff"
+            android:text="ImageView"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#69c0ff"
+            android:text="ListView"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorGrey"
+            android:text="GridView"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
             android:id="@+id/btn_10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RecyclerView"
-            android:textColor="#ffffff"
-            android:textSize="30sp"
-            android:textAllCaps="false"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="5dp"
-            android:background="@color/colorGrey"/>
+            android:background="@color/colorGrey"
+            android:text="RecyclerView"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
         <Button
             android:id="@+id/btn_11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WebView"
-            android:textColor="#ffffff"
-            android:textSize="30sp"
-            android:textAllCaps="false"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="5dp"
-            android:background="#887652"/>
+            android:background="#887652"
+            android:text="WebView"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
         <Button
             android:id="@+id/btn_12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Toast"
-            android:textColor="#ffffff"
-            android:textSize="30sp"
-            android:textAllCaps="false"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="5dp"
-            android:background="#0E2C80"/>
+            android:background="#0E2C80"
+            android:text="Toast"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
         <Button
             android:id="@+id/btn_13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AlertDialog"
-            android:textColor="#ffffff"
-            android:textSize="30sp"
-            android:textAllCaps="false"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="5dp"
-            android:background="#881FCC"/>
-    <Button
-        android:id="@+id/btn_9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ScrollViewTest"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@color/colorGrey"/>
+            android:background="#881FCC"
+            android:text="AlertDialog"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#A3264E"
+            android:text="Event"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorGrey"
+            android:text="ScrollViewTest"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
 
 
     </LinearLayout>
