@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent=null;
             switch (view.getId()){
                 case R.id.btn1:
+
                     intent = new Intent(MainActivity.this,ComponentNameActivity.class);
                     break;
                 case R.id.btn2:
