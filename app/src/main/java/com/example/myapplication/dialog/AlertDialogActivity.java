@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.dialog;
 
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
+import com.example.myapplication.R;
 import com.example.myapplication.utils.ToastUtils;
 
 public class AlertDialogActivity extends AppCompatActivity {
@@ -21,6 +21,7 @@ public class AlertDialogActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert_dialog);
+
 
         btn1 = findViewById(R.id.btn_dialog1);
         btn2 = findViewById(R.id.btn_dialog2);
@@ -103,7 +104,9 @@ public class AlertDialogActivity extends AppCompatActivity {
                 case R.id.btn_dialog5:
                     //自定义
                     final AlertDialog.Builder builder4 = new AlertDialog.Builder(AlertDialogActivity.this);
+                    //加载视图
                     View view = LayoutInflater.from(AlertDialogActivity.this).inflate(R.layout.layout_dialog,null);
+                   //获取UI组件
                     EditText username = view.findViewById(R.id.dialog_username);
                     EditText password = view.findViewById(R.id.dialog_password);
                     final Button login = view.findViewById(R.id.login);

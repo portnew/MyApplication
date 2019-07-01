@@ -13,11 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".event.TouchActivity"></activity>
+        <activity android:name=".PopActivity"></activity>
+        <activity android:name=".dialog.CustomDialogActivity" />
+        <activity android:name=".dialog.DialogActivity" />
+        <activity android:name=".event.TouchActivity" />
         <activity android:name=".event.LongClickActivity" />
         <activity android:name=".event.EventMainActivity" />
         <activity android:name=".event.EventActivity" />
-        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".dialog.AlertDialogActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".recyclerview.StaggerActivity" />

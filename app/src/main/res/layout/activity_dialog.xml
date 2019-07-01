@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dialog.DialogActivity">
+    <Button
+        android:id="@+id/btn_alertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="#CF5C5C"
+        android:text="AlertDialog"/>
+    <Button
+        android:id="@+id/btn_dialog_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="#0F0F0F"
+        android:text="自定义Dialog"/>
+
+</LinearLayout>

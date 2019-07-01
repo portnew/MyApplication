@@ -3,18 +3,15 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.myapplication.event.EventActivity;
+import com.example.myapplication.dialog.AlertDialogActivity;
+import com.example.myapplication.dialog.DialogActivity;
 import com.example.myapplication.event.EventMainActivity;
 import com.example.myapplication.gridview.GridViewActivity;
 import com.example.myapplication.listview.ListViewActivity;
@@ -22,7 +19,7 @@ import com.example.myapplication.recyclerview.RecyclerActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
-            button_8, button_10, button_11, button_12, button_13, button_14;
+            button_8, button_10, button_11, button_12, button_13, button_14,button_15;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         button_12 = findViewById(R.id.btn_12);
         button_13 = findViewById(R.id.btn_13);
         button_14 = findViewById(R.id.btn_14);
+        button_15 = findViewById(R.id.btn_15);
 
 
         setListeners();
@@ -84,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         button_12.setOnClickListener(onClick);
         button_13.setOnClickListener(onClick);
         button_14.setOnClickListener(onClick);
+        button_15.setOnClickListener(onClick);
 
 
     }
@@ -129,10 +128,13 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, ToastActivity.class);
                     break;
                 case R.id.btn_13:
-                    intent = new Intent(MainActivity.this, AlertDialogActivity.class);
+                    intent = new Intent(MainActivity.this, DialogActivity.class);
                     break;
                 case R.id.btn_14:
                     intent = new Intent(MainActivity.this, EventMainActivity.class);
+                    break;
+                case R.id.btn_15:
+                    intent = new Intent(MainActivity.this, PopActivity.class);
                     break;
             }
             startActivity(intent);
