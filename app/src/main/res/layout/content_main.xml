@@ -219,6 +219,30 @@
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#B32093"
+            android:text="Gesture"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#CFBC43"
+            android:text="应用资源"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/btn_9"

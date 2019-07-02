@@ -10,17 +10,21 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.myapplication.dialog.AlertDialogActivity;
+import com.example.myapplication.data.DataActivity;
 import com.example.myapplication.dialog.DialogActivity;
 import com.example.myapplication.event.EventMainActivity;
+import com.example.myapplication.gesture.GestureActivity;
+import com.example.myapplication.gesture.GestureMainActivity;
 import com.example.myapplication.gridview.GridViewActivity;
 import com.example.myapplication.handler.HandlerActivity;
 import com.example.myapplication.listview.ListViewActivity;
 import com.example.myapplication.recyclerview.RecyclerActivity;
+import com.example.myapplication.res.ResMainActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
-            button_8, button_10, button_11, button_12, button_13, button_14,button_15,button_16,button_17;
+            button_8, button_10, button_11, button_12, button_13, button_14,button_15,
+            button_16,button_17,button_18,button_19;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
         button_15 = findViewById(R.id.btn_15);
         button_16 = findViewById(R.id.btn_16);
         button_17 = findViewById(R.id.btn_17);
+        button_18 = findViewById(R.id.btn_18);
+        button_19 = findViewById(R.id.btn_19);
+
+
 
 
 
@@ -90,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
         button_15.setOnClickListener(onClick);
         button_16.setOnClickListener(onClick);
         button_17.setOnClickListener(onClick);
+        button_18.setOnClickListener(onClick);
+        button_19.setOnClickListener(onClick);
+
 
 
 
@@ -150,6 +161,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_17:
                     intent = new Intent(MainActivity.this, DataActivity.class);
+                    break;
+                case R.id.btn_18:
+                    intent = new Intent(MainActivity.this, GestureMainActivity.class);
+                    break;
+                case R.id.btn_19:
+                    intent = new Intent(MainActivity.this, ResMainActivity.class);
                     break;
             }
             startActivity(intent);

@@ -13,7 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".handler.HandlerActivity"></activity>
+        <activity android:name=".res.DrawableActivity"></activity>
+        <activity android:name=".res.ResMainActivity" />
+        <activity android:name=".gesture.ImageActivity" />
+        <activity android:name=".gesture.GestureMainActivity" />
+        <activity android:name=".gesture.GestureActivity" />
+        <activity android:name=".handler.HandlerActivity" />
         <activity android:name=".PopActivity" />
         <activity android:name=".dialog.CustomDialogActivity" />
         <activity android:name=".dialog.DialogActivity" />
