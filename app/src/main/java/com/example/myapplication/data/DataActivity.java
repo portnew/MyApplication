@@ -1,4 +1,4 @@
-package com.example.data;
+package com.example.myapplication.data;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.myapplication.R;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -16,7 +18,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class MainActivity extends AppCompatActivity {
+public class DataActivity extends AppCompatActivity {
 
     private EditText editText;
     @Override

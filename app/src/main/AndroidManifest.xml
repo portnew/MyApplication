@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PopActivity"></activity>
+        <activity android:name=".handler.HandlerActivity"></activity>
+        <activity android:name=".PopActivity" />
         <activity android:name=".dialog.CustomDialogActivity" />
         <activity android:name=".dialog.DialogActivity" />
         <activity android:name=".event.TouchActivity" />

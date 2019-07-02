@@ -195,6 +195,30 @@
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#3DBD30"
+            android:text="Handler"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#354583"
+            android:text="数据存储"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/btn_9"
