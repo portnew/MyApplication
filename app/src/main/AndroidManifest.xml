@@ -4,6 +4,8 @@
     package="com.example.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -13,7 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".res.DrawableActivity"></activity>
+        <activity android:name=".permission.ContactsActivity"></activity>
+        <activity android:name=".permission.PermissionActivity" />
+        <activity android:name=".permission.PermissionMainActivity" />
+        <activity android:name=".res.DrawableActivity" />
         <activity android:name=".res.ResMainActivity" />
         <activity android:name=".gesture.ImageActivity" />
         <activity android:name=".gesture.GestureMainActivity" />
