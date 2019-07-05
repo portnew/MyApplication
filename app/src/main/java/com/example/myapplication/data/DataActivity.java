@@ -24,7 +24,7 @@ public class DataActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.data_activity_main);
         editText = findViewById(R.id.edit);
         String inputText = load();
         if(!TextUtils.isEmpty(inputText)){

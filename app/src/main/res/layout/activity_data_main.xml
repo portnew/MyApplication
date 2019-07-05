@@ -4,24 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".data.DataMainActivity">
 
     <Button
-        android:id="@+id/save_data"
+        android:id="@+id/btn_data_1"
+        android:layout_margin="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Save Data"
-        android:textAllCaps="false"
-        android:textSize="20sp" />
-
+        android:text="文件存储"/>
     <Button
-        android:id="@+id/restore_data"
+        android:id="@+id/btn_data_2"
+        android:layout_margin="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Restore Data"
         android:textAllCaps="false"
-        android:textSize="20sp" />
-
+        android:text="SharedPreferences"/>
+    <Button
+        android:id="@+id/btn_data_3"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="记住密码"/>
 </LinearLayout>

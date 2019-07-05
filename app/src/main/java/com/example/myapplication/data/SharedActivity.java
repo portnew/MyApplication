@@ -1,4 +1,4 @@
-package com.example.shareepreferences;
+package com.example.myapplication.data;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
@@ -8,12 +8,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.myapplication.R;
+
+public class SharedActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.shared_main);
         Button btn = findViewById(R.id.save_data);
         Button btn2 = findViewById(R.id.restore_data);
 

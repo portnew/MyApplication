@@ -10,10 +10,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.myapplication.data.DataActivity;
+import com.example.myapplication.data.DataMainActivity;
 import com.example.myapplication.dialog.DialogActivity;
 import com.example.myapplication.event.EventMainActivity;
-import com.example.myapplication.gesture.GestureActivity;
 import com.example.myapplication.gesture.GestureMainActivity;
 import com.example.myapplication.gridview.GridViewActivity;
 import com.example.myapplication.handler.HandlerActivity;
@@ -61,21 +60,21 @@ public class MainActivity extends AppCompatActivity {
         /*button_1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ButtonActivity.class);
+                Intent intent = new Intent(SharedActivity.this,ButtonActivity.class);
                 startActivity(intent);
             }
         });
         button_2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,EditTextActivity.class);
+                Intent intent = new Intent(SharedActivity.this,EditTextActivity.class);
                 startActivity(intent);
             }
         });
         button_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,RadioButtonActivity.class);
+                Intent intent = new Intent(SharedActivity.this,RadioButtonActivity.class);
                 startActivity(intent);
             }
         });*/
@@ -163,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, HandlerActivity.class);
                     break;
                 case R.id.btn_17:
-                    intent = new Intent(MainActivity.this, DataActivity.class);
+                    intent = new Intent(MainActivity.this, DataMainActivity.class);
                     break;
                 case R.id.btn_18:
                     intent = new Intent(MainActivity.this, GestureMainActivity.class);

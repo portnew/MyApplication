@@ -26,7 +26,7 @@ public class HandlerActivity extends AppCompatActivity {
        /* handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(HandlerActivity.this, MainActivity.class);
+                Intent intent = new Intent(HandlerActivity.this, SharedActivity.class);
                 startActivity(intent);
             }
         },3000);*/
