@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -27,7 +28,7 @@ public class PasswordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_password);
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         usernameEdit = findViewById(R.id.et_data_1);
-        passwordEdit = findViewById(R.id.et_data_1);
+        passwordEdit = findViewById(R.id.et_data_2);
         remember = findViewById(R.id.checkbox_data);
         login = findViewById(R.id.btn_data_login);
 
@@ -46,7 +47,9 @@ public class PasswordActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String username = usernameEdit.getText().toString();
                 String password = passwordEdit.getText().toString();
-                if (username.equals("admin")&&password.equals("123456")){
+                Log.d("输入的帐号",username);
+                Log.d("输入的密码",password);
+                if ((username.equals("admin"))&&(password.equals("123456"))){
                     editor = preferences.edit();
                     if (remember.isChecked()){
                         editor.putBoolean("remember_password",true);

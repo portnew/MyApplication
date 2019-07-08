@@ -15,7 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".data.PasswordActivity"/>
+        <activity android:name=".data.LitePalActivity">
+
+        </activity>
+        <activity android:name=".data.SqliteActivity" />
+        <activity android:name=".data.PasswordActivity" />
         <activity android:name=".data.DataMainActivity" />
         <activity android:name=".data.DataActivity" />
         <activity android:name=".data.SharedActivity" />
