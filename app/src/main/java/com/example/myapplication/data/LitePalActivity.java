@@ -10,7 +10,6 @@ import com.example.myapplication.R;
 import com.example.myapplication.data.entity.Book;
 
 import org.litepal.LitePal;
-import org.litepal.crud.LitePalSupport;
 import org.litepal.tablemanager.Connector;
 
 import java.util.List;

@@ -13,9 +13,13 @@ public class MyProvider extends ContentProvider {
     public static final int TABLE2_ITEM = 3;
     private static UriMatcher uriMatcher;
 
-    static{
+    static {
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
-//        uriMatcher.addURI();
+        uriMatcher.addURI("com.example.app.permission", "table1", TABLE1_DIR);
+        uriMatcher.addURI("com.example.app.permission", "table1/#", TABLE1_ITEM);
+        uriMatcher.addURI("com.example.app.permission", "table2", TABLE2_DIR);
+        uriMatcher.addURI("com.example.app.permission", "table2/#", TABLE2_ITEM);
+
     }
 
     @Override
@@ -24,27 +28,53 @@ public class MyProvider extends ContentProvider {
     }
 
     @Override
-    public Cursor query( Uri uri,  String[] projection,  String selection,  String[] selectionArgs,  String sortOrder) {
+    public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
+        switch (uriMatcher.match(uri)) {
+            case TABLE1_DIR:
+                //查询table1表中的所有数据
+                break;
+            case TABLE1_ITEM:
+                //查询table1表中的单条数据
+                break;
+            case TABLE2_DIR:
+                //查询table2表中的所有数据
+                break;
+            case TABLE2_ITEM:
+                //查询table2表中的单条数据
+                break;
+        }
         return null;
     }
 
     @Override
-    public String getType( Uri uri) {
+    public String getType(Uri uri) {
+        switch (uriMatcher.match(uri)) {
+            case TABLE1_DIR:
+                return "vnd.android.cursor.dir/vnd.com.example.app.permission.table1";
+            case TABLE1_ITEM:
+                return "vnd.android.cursor.item/vnd.com.example.app.permission.table1";
+            case TABLE2_DIR:
+                return "vnd.android.cursor.dir/vnd.com.example.app.permission.table2";
+            case TABLE2_ITEM:
+                return "vnd.android.cursor.item/vnd.com.example.app.permission.table2";
+            default:
+                break;
+        }
         return null;
     }
 
     @Override
-    public Uri insert( Uri uri,  ContentValues values) {
+    public Uri insert(Uri uri, ContentValues values) {
         return null;
     }
 
     @Override
-    public int delete( Uri uri, String selection,  String[] selectionArgs) {
+    public int delete(Uri uri, String selection, String[] selectionArgs) {
         return 0;
     }
 
     @Override
-    public int update(Uri uri,  ContentValues values,  String selection, String[] selectionArgs) {
+    public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
         return 0;
     }
 }

@@ -8,6 +8,7 @@ public class Book extends LitePalSupport {
     private double price;
     private  int pages;
     private String name;
+    private String press;
 
     public String getPress() {
         return press;
@@ -17,7 +18,7 @@ public class Book extends LitePalSupport {
         this.press = press;
     }
 
-    private String press;
+
 
     public int getId() {
         return id;

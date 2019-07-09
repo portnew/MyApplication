@@ -28,6 +28,8 @@ public class PermissionActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(ContextCompat.checkSelfPermission(PermissionActivity.this, Manifest.permission.CALL_PHONE)
                 != PackageManager.PERMISSION_GRANTED){
+                    //public static final int PERMISSION_GRANTED = 0;
+                    //public static final int PERMISSION_DENIED = -1;
                     //申请权限
                     ActivityCompat.requestPermissions(PermissionActivity.this,new String[]{Manifest.permission.CALL_PHONE},1);
 
