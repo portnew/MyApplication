@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,15 +35,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction("com.example.broadcast.MY_BROADCAST");
-                //方式一
-                intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
-                intent.setPackage("com.example.broadcast");
+                //intent.setPackage("com.example.broadcast");
 
-                //方式二
-                //intent.setComponent(new ComponentName("com.example.broadcast","com.example.broadcast.MyBroadcastReceiver"));
-
-
-                sendBroadcast(intent);
+                //如果不设置package 将无法启动BroadcastReceiver
+//                sendBroadcast(intent);
+                sendOrderedBroadcast(intent,null);
             }
         });
 

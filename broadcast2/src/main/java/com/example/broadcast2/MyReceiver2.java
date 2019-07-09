@@ -9,6 +9,6 @@ public class MyReceiver2 extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context,"跨了，跨了", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context,"跨了，跨了", Toast.LENGTH_LONG).show();
     }
 }
