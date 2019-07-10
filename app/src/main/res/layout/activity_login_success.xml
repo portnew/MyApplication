@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".broadcast.offline.LoginSuccessActivity">
+
+    <TextView
+        android:id="@+id/btn_success_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_centerInParent="true"
+        android:text="Login Success"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_success_1"
+        android:id="@+id/btn_force_offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:background="#E70D0D"
+        android:text="Send Force Offline Broadcast"/>
+
+</RelativeLayout>

@@ -15,11 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".broadcast.offline.LoginSuccessActivity"></activity>
+        <activity android:name=".broadcast.offline.LoginActivity" />
+        <activity android:name=".broadcast.offline.BaseActivity" />
+        <activity android:name=".broadcast.OfflineActivity" />
+        <activity android:name=".broadcast.LocalActivity" />
+        <activity android:name=".broadcast.BroadcastMainActivity" />
+
         <provider
             android:name=".data.MyDatabaseProvider"
             android:authorities="com.example.myapplication.data"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
 
         <activity android:name=".data.LitePalActivity" />
         <activity android:name=".data.SqliteActivity" />

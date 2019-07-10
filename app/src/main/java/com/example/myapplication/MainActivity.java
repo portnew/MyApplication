@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.myapplication.broadcast.BroadcastMainActivity;
 import com.example.myapplication.data.DataMainActivity;
 import com.example.myapplication.dialog.DialogActivity;
 import com.example.myapplication.event.EventMainActivity;
@@ -24,7 +25,7 @@ import com.example.myapplication.res.ResMainActivity;
 public class MainActivity extends AppCompatActivity {
     private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
             button_8, button_10, button_11, button_12, button_13, button_14,button_15,
-            button_16,button_17,button_18,button_19,button_20;
+            button_16,button_17,button_18,button_19,button_20,button_21;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         button_18 = findViewById(R.id.btn_18);
         button_19 = findViewById(R.id.btn_19);
         button_20 = findViewById(R.id.btn_20);
+        button_21 = findViewById(R.id.btn_21);
 
 
 
@@ -102,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         button_18.setOnClickListener(onClick);
         button_19.setOnClickListener(onClick);
         button_20.setOnClickListener(onClick);
+        button_21.setOnClickListener(onClick);
 
 
 
@@ -172,6 +175,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_20:
                     intent = new Intent(MainActivity.this, PermissionMainActivity.class);
+                    break;
+                case R.id.btn_21:
+                    intent = new Intent(MainActivity.this, BroadcastMainActivity.class);
                     break;
             }
             startActivity(intent);
