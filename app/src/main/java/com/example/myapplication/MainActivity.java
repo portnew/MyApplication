@@ -18,6 +18,9 @@ import com.example.myapplication.gesture.GestureMainActivity;
 import com.example.myapplication.gridview.GridViewActivity;
 import com.example.myapplication.handler.HandlerActivity;
 import com.example.myapplication.listview.ListViewActivity;
+import com.example.myapplication.media.MediaMainActivity;
+import com.example.myapplication.network.NetworkMainActivity;
+import com.example.myapplication.notification.NotiMainActivity;
 import com.example.myapplication.permission.PermissionMainActivity;
 import com.example.myapplication.recyclerview.RecyclerActivity;
 import com.example.myapplication.res.ResMainActivity;
@@ -25,7 +28,7 @@ import com.example.myapplication.res.ResMainActivity;
 public class MainActivity extends AppCompatActivity {
     private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
             button_8, button_10, button_11, button_12, button_13, button_14,button_15,
-            button_16,button_17,button_18,button_19,button_20,button_21;
+            button_16,button_17,button_18,button_19,button_20,button_21,button_22,button_23,button_24;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +53,11 @@ public class MainActivity extends AppCompatActivity {
         button_18 = findViewById(R.id.btn_18);
         button_19 = findViewById(R.id.btn_19);
         button_20 = findViewById(R.id.btn_20);
+
         button_21 = findViewById(R.id.btn_21);
+        button_22 = findViewById(R.id.btn_22);
+        button_23 = findViewById(R.id.btn_23);
+        button_24 = findViewById(R.id.btn_24);
 
 
 
@@ -105,7 +112,9 @@ public class MainActivity extends AppCompatActivity {
         button_19.setOnClickListener(onClick);
         button_20.setOnClickListener(onClick);
         button_21.setOnClickListener(onClick);
-
+        button_22.setOnClickListener(onClick);
+        button_23.setOnClickListener(onClick);
+        button_24.setOnClickListener(onClick);
 
 
 
@@ -178,6 +187,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_21:
                     intent = new Intent(MainActivity.this, BroadcastMainActivity.class);
+                    break;
+                case R.id.btn_22:
+                    intent = new Intent(MainActivity.this, NotiMainActivity.class);
+                    break;
+                case R.id.btn_23:
+                    intent = new Intent(MainActivity.this, MediaMainActivity.class);
+                    break;
+                case R.id.btn_24:
+                    intent = new Intent(MainActivity.this, NetworkMainActivity.class);
                     break;
             }
             startActivity(intent);

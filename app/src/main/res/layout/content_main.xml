@@ -279,6 +279,31 @@
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#0E78AA"
+            android:text="使用多媒体"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#180EAA"
+            android:text="Network"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
 
         <Button
             android:id="@+id/btn_9"
