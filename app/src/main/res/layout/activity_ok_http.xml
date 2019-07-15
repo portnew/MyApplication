@@ -2,24 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
     <Button
         android:id="@+id/btn_okhttp_send_request"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="28sp"
-        android:textAllCaps="false"
         android:layout_margin="3dp"
-        android:text="Send Request"/>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:text="Send Request"
+        android:textAllCaps="false"
+        android:textSize="28sp" />
 
-        <TextView
-            android:id="@+id/textview_response_text_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </ScrollView>
+    <TextView
+        android:id="@+id/textview_response_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        android:textColor="#F50707"
+        android:textSize="20sp" />
 
 </LinearLayout>

@@ -22,7 +22,7 @@ public class NetworkMainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button button2 = findViewById(R.id.btn_HttpURLConnection);
+        Button button2 = findViewById(R.id.btn_okhttp);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lbs.LBSMainActivity">
+    <Button
+        android:id="@+id/btn_baidu_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#DD1F1F"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:text="Baidu Map"/>
+    <Button
+        android:id="@+id/btn_gaode_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#2ED129"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:text="高德 Map"/>
+
+</LinearLayout>

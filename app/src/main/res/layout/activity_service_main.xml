@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".service.ServiceMainActivity">
+
+    <Button
+        android:id="@+id/btn_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Thread"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Service"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_foreservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="前台服务"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_intentservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="IntentService"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_download_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="下载实例"
+        android:textAllCaps="false" />
+</LinearLayout>

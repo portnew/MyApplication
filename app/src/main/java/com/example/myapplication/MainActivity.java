@@ -17,6 +17,7 @@ import com.example.myapplication.event.EventMainActivity;
 import com.example.myapplication.gesture.GestureMainActivity;
 import com.example.myapplication.gridview.GridViewActivity;
 import com.example.myapplication.handler.HandlerActivity;
+import com.example.myapplication.lbs.LBSMainActivity;
 import com.example.myapplication.listview.ListViewActivity;
 import com.example.myapplication.media.MediaMainActivity;
 import com.example.myapplication.network.NetworkMainActivity;
@@ -24,11 +25,13 @@ import com.example.myapplication.notification.NotiMainActivity;
 import com.example.myapplication.permission.PermissionMainActivity;
 import com.example.myapplication.recyclerview.RecyclerActivity;
 import com.example.myapplication.res.ResMainActivity;
+import com.example.myapplication.service.ServiceMainActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
             button_8, button_10, button_11, button_12, button_13, button_14,button_15,
-            button_16,button_17,button_18,button_19,button_20,button_21,button_22,button_23,button_24;
+            button_16,button_17,button_18,button_19,button_20,button_21,button_22,
+            button_23,button_24,button_25,button_26;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         button_22 = findViewById(R.id.btn_22);
         button_23 = findViewById(R.id.btn_23);
         button_24 = findViewById(R.id.btn_24);
+        button_25 = findViewById(R.id.btn_25);
+        button_26 = findViewById(R.id.btn_26);
+
 
 
 
@@ -115,6 +121,8 @@ public class MainActivity extends AppCompatActivity {
         button_22.setOnClickListener(onClick);
         button_23.setOnClickListener(onClick);
         button_24.setOnClickListener(onClick);
+        button_25.setOnClickListener(onClick);
+        button_26.setOnClickListener(onClick);
 
 
 
@@ -196,6 +204,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_24:
                     intent = new Intent(MainActivity.this, NetworkMainActivity.class);
+                    break;
+                case R.id.btn_25:
+                    intent = new Intent(MainActivity.this, ServiceMainActivity.class);
+                    break;
+                case R.id.btn_26:
+                    intent = new Intent(MainActivity.this, LBSMainActivity.class);
                     break;
             }
             startActivity(intent);

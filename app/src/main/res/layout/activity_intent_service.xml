@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/start_service_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#14E6D2"
+        android:text="Start IntentService"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <!--<Button
+        android:id="@+id/stop_service_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#E91E63"
+        android:text="Stop Service"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/bind_service_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#E9BD1E"
+        android:text="Bind Service"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/unbind_service_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#1E32E9"
+        android:text="Unbind Service"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+-->
+</LinearLayout>
