@@ -21,6 +21,7 @@ import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.MapStatusUpdate;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
+import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.model.LatLng;
 import com.example.myapplication.R;
 import com.example.myapplication.utils.ToastUtils;
@@ -43,6 +44,7 @@ public class BaiduActivity extends AppCompatActivity {
         textView = findViewById(R.id.textview_position);
         mapView = findViewById(R.id.mapview_baidu);
         baiduMap = mapView.getMap();
+        baiduMap.setMyLocationEnabled(true);
         Button button = findViewById(R.id.btn_mylocation);
 
         client = new LocationClient(this);
@@ -118,6 +120,11 @@ public class BaiduActivity extends AppCompatActivity {
             baiduMap.animateMapStatus(update);
             isFirstLocate = false;
         }
+        MyLocationData.Builder builder = new MyLocationData.Builder();
+        builder.latitude(location.getLatitude()).longitude(location.getLongitude());
+        MyLocationData locationData = builder.build();
+        baiduMap.setMyLocationData(locationData);
+
     }
 
     @Override
@@ -159,6 +166,7 @@ public class BaiduActivity extends AppCompatActivity {
         super.onDestroy();
         client.stop();
         mapView.onDestroy();
+        baiduMap.setMyLocationEnabled(false);
     }
 }
 
