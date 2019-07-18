@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#B45555"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:text="Tool bar"/>
+    <Button
+        android:id="@+id/btn_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#FF5D5D"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:text="DrawerLayout"/>
+    <Button
+        android:id="@+id/btn_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#A32727"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:text="Navigation View"/>
+    <Button
+        android:id="@+id/btn_floating_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#DA6060"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:text="悬浮按钮"/>
+    <Button
+        android:id="@+id/btn_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#862121"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:text="CardView"/>
+</LinearLayout>
