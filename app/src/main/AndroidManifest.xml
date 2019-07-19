@@ -29,7 +29,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".material.CardViewActivity"></activity>
+        <activity android:name=".material.CollapsingActivity"
+            android:theme="@style/FruitTheme"/>
+        <activity android:name=".material.CardViewActivity" />
         <activity android:name=".material.FloatingButtonActivity" />
         <activity android:name=".material.NavigationViewActivity" />
         <activity android:name=".material.DrawerLayoutActivity" />

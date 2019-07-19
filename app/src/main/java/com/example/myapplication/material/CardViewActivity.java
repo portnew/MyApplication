@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
@@ -45,12 +46,13 @@ public class CardViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_card_view);
         initFruits();
         RecyclerView recyclerView = findViewById(R.id.recycler_view_card);
-        GridLayoutManager manager = new GridLayoutManager(this,2);
+        GridLayoutManager manager = new GridLayoutManager(this,3);
         recyclerView.setLayoutManager(manager);
         adapter = new FruitAdapter(fruitList);
         recyclerView.setAdapter(adapter);
         swipe = findViewById(R.id.swipe);
-        swipe.setColorSchemeResources(R.color.colorPrimary);
+//        swipe.setColorSchemeResources(R.color.colorPrimary);
+        swipe.setColorSchemeResources(R.color.colorBlack);
         swipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -67,7 +69,7 @@ public class CardViewActivity extends AppCompatActivity {
 
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.mipmap.ic_launcher);
+            actionBar.setHomeAsUpIndicator(R.drawable.rotate);
         }
         navigationView.setCheckedItem(R.id.nav_call);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -95,7 +97,7 @@ public class CardViewActivity extends AppCompatActivity {
     }
     private void initFruits(){
         fruitList.clear();
-        for (int i=0;i<50;i++){
+        for (int i=0;i<81;i++){
             Random random = new Random();
             int index = random.nextInt(fruits.length);
             fruitList.add(fruits[index]);
@@ -106,7 +108,8 @@ public class CardViewActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try{
-                    Thread.sleep(2000);
+//                    Thread.sleep(2000);
+                    Thread.sleep(100);
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }
@@ -121,7 +124,15 @@ public class CardViewActivity extends AppCompatActivity {
             }
         }).start();
     }
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                drawerLayout.openDrawer(GravityCompat.START);
+                break;
+        }
+        return true;
+    }
 
 
 

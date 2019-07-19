@@ -49,5 +49,12 @@ public class MaterialMainActivity extends AppCompatActivity {
                 startActivity(new Intent(MaterialMainActivity.this,CardViewActivity.class));
             }
         });
+        Button btn6 = findViewById(R.id.btn_collapsing);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MaterialMainActivity.this,CollapsingActivity.class));
+            }
+        });
     }
 }
