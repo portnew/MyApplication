@@ -6,9 +6,44 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".res.ResMainActivity">
-<Button
-    android:id="@+id/btn_res_1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Drawable资源"/>
+
+    <Button
+        android:id="@+id/btn_res_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="字符串资源"/>
+    <Button
+        android:id="@+id/btn_res_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawable资源"/>
+    <Button
+        android:id="@+id/btn_res_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微信登录"/>
+    <Button
+        android:id="@+id/btn_res_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B13232"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="主题资源"/>
+    <Button
+        android:id="@+id/btn_res_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3252B1"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="menu"/>
+    <Button
+        android:id="@+id/btn_res_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#32B156"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="上下文菜单"/>
 </LinearLayout>

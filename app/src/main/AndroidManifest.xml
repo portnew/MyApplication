@@ -29,8 +29,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".material.CollapsingActivity"
-            android:theme="@style/FruitTheme"/>
+        <activity android:name=".res.menu.ContextMenuActivity"></activity>
+        <activity android:name=".res.menu.SettingsActivity" />
+        <activity android:name=".res.menu.HomeActivity" />
+        <activity android:name=".res.menu.MenuActivity"></activity>
+        <activity
+            android:name=".res.ThemeActivity"
+            android:theme="@style/Theme1" />
+        <activity android:name=".res.LogActivity" />
+        <activity android:name=".res.StringActivity" />
+        <activity
+            android:name=".material.CollapsingActivity"
+            android:theme="@style/FruitTheme" />
         <activity android:name=".material.CardViewActivity" />
         <activity android:name=".material.FloatingButtonActivity" />
         <activity android:name=".material.NavigationViewActivity" />
