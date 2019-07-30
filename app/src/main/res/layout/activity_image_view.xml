@@ -20,7 +20,6 @@
         android:layout_below="@id/iv_1"
         android:layout_marginTop="15dp"
         android:background="#cf1322"
-        android:src="@drawable/aaa"
         android:scaleType="fitCenter" />
 
 </RelativeLayout>
