@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array">
+        <item>一去二三里</item>
+        <item>烟村四五家</item>
+        <item>亭台六七座</item>
+        <item>八九十只花</item>
+    </array>
+    <integer-array name="integerArray"/>
+    <string-array name="stringArray"/>
+</resources>
