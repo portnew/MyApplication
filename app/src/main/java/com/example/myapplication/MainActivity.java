@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.myapplication.animation.AnimationMainActivity;
 import com.example.myapplication.broadcast.BroadcastMainActivity;
 import com.example.myapplication.data.DataMainActivity;
 import com.example.myapplication.dialog.DialogActivity;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
             button_8, button_10, button_11, button_12, button_13, button_14,button_15,
             button_16,button_17,button_18,button_19,button_20,button_21,button_22,
-            button_23,button_24,button_25,button_26,button_27;
+            button_23,button_24,button_25,button_26,button_27,button_28;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
         button_25 = findViewById(R.id.btn_25);
         button_26 = findViewById(R.id.btn_26);
         button_27 = findViewById(R.id.btn_27);
+        button_28 = findViewById(R.id.btn_28);
+
 
 
 
@@ -127,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         button_25.setOnClickListener(onClick);
         button_26.setOnClickListener(onClick);
         button_27.setOnClickListener(onClick);
+        button_28.setOnClickListener(onClick);
 
 
 
@@ -217,6 +221,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_27:
                     intent = new Intent(MainActivity.this, MaterialMainActivity.class);
+                    break;
+                case R.id.btn_28:
+                    intent = new Intent(MainActivity.this, AnimationMainActivity.class);
                     break;
             }
             startActivity(intent);

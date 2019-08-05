@@ -29,10 +29,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".res.menu.ContextMenuActivity"></activity>
+        <activity android:name=".animation.MainActivity"></activity>
+        <activity android:name=".animation.Guide3Activity" />
+        <activity android:name=".animation.Guide2Activity" />
+        <activity android:name=".animation.GuideActivity" />
+        <activity android:name=".animation.WelcomeActivity" />
+        <activity android:name=".animation.AnimationMainActivity" />
+        <activity android:name=".res.menu.ContextMenuActivity" />
         <activity android:name=".res.menu.SettingsActivity" />
         <activity android:name=".res.menu.HomeActivity" />
-        <activity android:name=".res.menu.MenuActivity"></activity>
+        <activity android:name=".res.menu.MenuActivity" />
         <activity
             android:name=".res.ThemeActivity"
             android:theme="@style/Theme1" />
