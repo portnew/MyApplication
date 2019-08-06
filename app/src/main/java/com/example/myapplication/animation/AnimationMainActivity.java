@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.example.myapplication.R;
 
 public class AnimationMainActivity extends AppCompatActivity {
-    Button btn1;
+    Button btn1,btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,14 @@ public class AnimationMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AnimationMainActivity.this,WelcomeActivity.class));
+            }
+        });
+        btn2 = findViewById(R.id.animation_2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AnimationMainActivity.this,CleanActivity.class));
+
             }
         });
     }

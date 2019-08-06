@@ -29,7 +29,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".animation.MainActivity"></activity>
+        <activity android:name=".animation.CleanActivity"></activity>
+        <activity android:name=".animation.MainActivity" />
         <activity android:name=".animation.Guide3Activity" />
         <activity android:name=".animation.Guide2Activity" />
         <activity android:name=".animation.GuideActivity" />
