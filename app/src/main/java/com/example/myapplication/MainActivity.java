@@ -16,6 +16,7 @@ import com.example.myapplication.data.DataMainActivity;
 import com.example.myapplication.dialog.DialogActivity;
 import com.example.myapplication.event.EventMainActivity;
 import com.example.myapplication.gesture.GestureMainActivity;
+import com.example.myapplication.graphics.DrawableMainActivity;
 import com.example.myapplication.gridview.GridViewActivity;
 import com.example.myapplication.handler.HandlerActivity;
 import com.example.myapplication.lbs.LBSMainActivity;
@@ -26,6 +27,7 @@ import com.example.myapplication.network.NetworkMainActivity;
 import com.example.myapplication.notification.NotiMainActivity;
 import com.example.myapplication.permission.PermissionMainActivity;
 import com.example.myapplication.recyclerview.RecyclerActivity;
+import com.example.myapplication.res.DrawableActivity;
 import com.example.myapplication.res.ResMainActivity;
 import com.example.myapplication.service.ServiceMainActivity;
 
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
             button_8, button_10, button_11, button_12, button_13, button_14,button_15,
             button_16,button_17,button_18,button_19,button_20,button_21,button_22,
-            button_23,button_24,button_25,button_26,button_27,button_28;
+            button_23,button_24,button_25,button_26,button_27,button_28,button_29;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         button_18 = findViewById(R.id.btn_18);
         button_19 = findViewById(R.id.btn_19);
         button_20 = findViewById(R.id.btn_20);
-
         button_21 = findViewById(R.id.btn_21);
         button_22 = findViewById(R.id.btn_22);
         button_23 = findViewById(R.id.btn_23);
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         button_26 = findViewById(R.id.btn_26);
         button_27 = findViewById(R.id.btn_27);
         button_28 = findViewById(R.id.btn_28);
-
+        button_29 = findViewById(R.id.btn_29);
 
 
 
@@ -131,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
         button_26.setOnClickListener(onClick);
         button_27.setOnClickListener(onClick);
         button_28.setOnClickListener(onClick);
+        button_29.setOnClickListener(onClick);
 
 
 
@@ -224,6 +226,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_28:
                     intent = new Intent(MainActivity.this, AnimationMainActivity.class);
+                    break;
+                case R.id.btn_29:
+                    intent = new Intent(MainActivity.this, DrawableMainActivity.class);
                     break;
             }
             startActivity(intent);
