@@ -28,21 +28,26 @@ public class MatrixActivity extends AppCompatActivity {
     }
     public void scaleBitmap(View view){
         float scale = Float.parseFloat(editText1.getText().toString());
+        matrix.reset();
         matrix.postScale(scale,scale);
         imageView.setImageMatrix(matrix);
+
 
     }
     public void rotateBitmap(View view){
         float degrees = Float.parseFloat(editText2.getText().toString());
+        matrix.reset();
         matrix.postRotate(degrees);
         imageView.setImageMatrix(matrix);
+
     }
     public void translateBitmap(View view){
         float translateX = Float.parseFloat(editText3.getText().toString());
         float translateY = Float.parseFloat(editText4.getText().toString());
-
+        matrix.reset();
         matrix.postTranslate(translateX,translateY);
         imageView.setImageMatrix(matrix);
+
 
     }
     public void clearBitmap(View view){
