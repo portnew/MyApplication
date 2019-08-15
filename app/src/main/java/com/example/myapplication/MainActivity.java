@@ -29,13 +29,14 @@ import com.example.myapplication.permission.PermissionMainActivity;
 import com.example.myapplication.recyclerview.RecyclerActivity;
 import com.example.myapplication.res.DrawableActivity;
 import com.example.myapplication.res.ResMainActivity;
+import com.example.myapplication.selfview.MyselfActivity;
 import com.example.myapplication.service.ServiceMainActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button button_1, button_2, button_3, button_4, button_5, button_6, button_7,
             button_8, button_10, button_11, button_12, button_13, button_14,button_15,
             button_16,button_17,button_18,button_19,button_20,button_21,button_22,
-            button_23,button_24,button_25,button_26,button_27,button_28,button_29;
+            button_23,button_24,button_25,button_26,button_27,button_28,button_29,button_30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         button_27 = findViewById(R.id.btn_27);
         button_28 = findViewById(R.id.btn_28);
         button_29 = findViewById(R.id.btn_29);
+        button_30 = findViewById(R.id.btn_30);
+
 
 
 
@@ -133,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
         button_27.setOnClickListener(onClick);
         button_28.setOnClickListener(onClick);
         button_29.setOnClickListener(onClick);
+        button_30.setOnClickListener(onClick);
 
 
 
@@ -229,6 +233,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_29:
                     intent = new Intent(MainActivity.this, DrawableMainActivity.class);
+                    break;
+                case R.id.btn_30:
+                    intent = new Intent(MainActivity.this, MyselfActivity.class);
                     break;
             }
             startActivity(intent);

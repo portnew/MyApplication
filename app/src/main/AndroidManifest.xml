@@ -29,7 +29,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".graphics.MyViewActivity"></activity>
+        <activity android:name=".selfview.ZoomActivity"></activity>
+        <activity android:name=".selfview.MyselfActivity" />
+        <activity android:name=".graphics.MyViewActivity" />
         <activity android:name=".graphics.MatrixActivity" />
         <activity android:name=".graphics.DrawableMainActivity" />
         <activity android:name=".animation.CleanActivity" />
