@@ -67,7 +67,6 @@ public class ZoomScrollView extends ScrollView {
         //获得默认第一个view
         if (getChildAt(0)!=null && getChildAt(0) instanceof ViewGroup && zoomView == null){
             ViewGroup vg = (ViewGroup) getChildAt(0);
-            Log.d("TAG",String.valueOf(vg.getChildCount()));
             if (vg.getChildCount()>0){
                 zoomView = vg.getChildAt(0);
             }
