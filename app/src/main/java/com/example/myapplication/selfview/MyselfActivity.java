@@ -10,7 +10,8 @@ import com.example.myapplication.R;
 
 public class MyselfActivity extends AppCompatActivity {
 
-    Button btn1;
+    Button btn1,btn2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,13 @@ public class MyselfActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyselfActivity.this,ZoomActivity.class));
+            }
+        });
+        btn1 = findViewById(R.id.ripple_1);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyselfActivity.this,RippleActivity.class));
             }
         });
     }
