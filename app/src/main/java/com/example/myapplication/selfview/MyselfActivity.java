@@ -10,7 +10,7 @@ import com.example.myapplication.R;
 
 public class MyselfActivity extends AppCompatActivity {
 
-    Button btn1,btn2;
+    Button btn1,btn2,btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +23,18 @@ public class MyselfActivity extends AppCompatActivity {
                 startActivity(new Intent(MyselfActivity.this,ZoomActivity.class));
             }
         });
-        btn1 = findViewById(R.id.ripple_1);
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn2 = findViewById(R.id.ripple_1);
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyselfActivity.this,RippleActivity.class));
+            }
+        });
+        btn3 = findViewById(R.id.youku_menu);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyselfActivity.this,YoukuActivity.class));
             }
         });
     }

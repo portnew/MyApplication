@@ -3,24 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission
-        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".selfview.RippleActivity"></activity>
+        <activity android:name=".selfview.YoukuActivity"></activity>
+        <activity android:name=".selfview.RippleActivity" />
         <activity android:name=".selfview.ZoomActivity" />
         <activity android:name=".selfview.MyselfActivity" />
         <activity android:name=".graphics.MyViewActivity" />
@@ -63,46 +46,23 @@
             android:label="Fruits" />
         <activity android:name=".material.MaterialMainActivity" />
 
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="WH3Nh0Ej14GRS8H4hiljSLURGGSG5cXO" />
-
         <activity android:name=".lbs.GaodeActivity" />
+
         <activity android:name=".lbs.BaiduActivity" />
         <activity android:name=".lbs.LBSMainActivity" />
-
-        <service
-            android:name=".service.download.DownloadService"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".service.MyIntentService"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name="com.baidu.location.f"
-            android:enabled="true"
-            android:process=":remote" />
-
         <activity android:name=".service.IntentServiceActivity" />
+
         <activity android:name=".service.ForeActivity" />
         <activity android:name=".service.ServiceActivity" />
-
-        <service
-            android:name=".service.MyService"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".service.ForeService"
-            android:enabled="true"
-            android:exported="true" />
-
         <activity android:name=".service.ThreadActivity" />
+
         <activity android:name=".service.ServiceMainActivity" />
         <activity android:name=".network.OkHttpActivity" />
         <activity android:name=".network.UrlActivity" />
+
         <activity android:name=".network.NetworkMainActivity" />
         <activity android:name=".media.VideoActivity" />
+
         <activity android:name=".media.MediaActivity" />
         <activity android:name=".media.PhotoActivity" />
         <activity android:name=".media.MediaMainActivity" />
@@ -115,30 +75,16 @@
         <activity android:name=".broadcast.OfflineActivity" />
         <activity android:name=".broadcast.LocalActivity" />
         <activity android:name=".broadcast.BroadcastMainActivity" />
-
-        <provider
-            android:name=".data.MyDatabaseProvider"
-            android:authorities="com.example.myapplication.data"
-            android:enabled="true"
-            android:exported="true" />
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.myapplication.media"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
-
         <activity android:name=".data.LitePalActivity" />
         <activity android:name=".data.SqliteActivity" />
         <activity android:name=".data.PasswordActivity" />
         <activity android:name=".data.DataMainActivity" />
         <activity android:name=".data.DataActivity" />
         <activity android:name=".data.SharedActivity" />
+
         <activity android:name=".permission.ContactsActivity" />
         <activity android:name=".permission.PermissionActivity" />
+
         <activity android:name=".permission.PermissionMainActivity" />
         <activity android:name=".res.DrawableActivity" />
         <activity android:name=".res.ResMainActivity" />
@@ -178,6 +124,61 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="WH3Nh0Ej14GRS8H4hiljSLURGGSG5cXO" />
+        <provider
+            android:name=".data.MyDatabaseProvider"
+            android:authorities="com.example.myapplication.data"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.myapplication.media"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <service
+            android:name=".service.download.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.MyIntentService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.ForeService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
 </manifest>
