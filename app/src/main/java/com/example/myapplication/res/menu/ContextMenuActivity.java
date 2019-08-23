@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.example.myapplication.R;
 import com.example.myapplication.utils.ToastUtils;
 
-import org.w3c.dom.Text;
 
 public class ContextMenuActivity extends AppCompatActivity {
 

@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".selfview.YoukuActivity"></activity>
+        <activity android:name=".selfview.ViewPagerActivity"></activity>
+        <activity android:name=".selfview.YoukuActivity" />
         <activity android:name=".selfview.RippleActivity" />
         <activity android:name=".selfview.ZoomActivity" />
         <activity android:name=".selfview.MyselfActivity" />
@@ -45,24 +46,18 @@
             android:name=".material.ToolbarActivity"
             android:label="Fruits" />
         <activity android:name=".material.MaterialMainActivity" />
-
         <activity android:name=".lbs.GaodeActivity" />
-
         <activity android:name=".lbs.BaiduActivity" />
         <activity android:name=".lbs.LBSMainActivity" />
         <activity android:name=".service.IntentServiceActivity" />
-
         <activity android:name=".service.ForeActivity" />
         <activity android:name=".service.ServiceActivity" />
         <activity android:name=".service.ThreadActivity" />
-
         <activity android:name=".service.ServiceMainActivity" />
         <activity android:name=".network.OkHttpActivity" />
         <activity android:name=".network.UrlActivity" />
-
         <activity android:name=".network.NetworkMainActivity" />
         <activity android:name=".media.VideoActivity" />
-
         <activity android:name=".media.MediaActivity" />
         <activity android:name=".media.PhotoActivity" />
         <activity android:name=".media.MediaMainActivity" />
@@ -81,10 +76,8 @@
         <activity android:name=".data.DataMainActivity" />
         <activity android:name=".data.DataActivity" />
         <activity android:name=".data.SharedActivity" />
-
         <activity android:name=".permission.ContactsActivity" />
         <activity android:name=".permission.PermissionActivity" />
-
         <activity android:name=".permission.PermissionMainActivity" />
         <activity android:name=".res.DrawableActivity" />
         <activity android:name=".res.ResMainActivity" />
@@ -124,9 +117,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="WH3Nh0Ej14GRS8H4hiljSLURGGSG5cXO" />
+
         <provider
             android:name=".data.MyDatabaseProvider"
             android:authorities="com.example.myapplication.data"
@@ -141,6 +136,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
         <service
             android:name=".service.download.DownloadService"
             android:enabled="true"

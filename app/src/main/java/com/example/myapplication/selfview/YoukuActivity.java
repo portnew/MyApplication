@@ -2,6 +2,8 @@ package com.example.myapplication.selfview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
@@ -66,5 +68,37 @@ public class YoukuActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    //监听menu按键
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        //这里为了试验，使用音量键up
+        Log.e("tag",keyCode+"");
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP){
+            if (isShowLevel1&&!isShowLevel2&&!isShowLevel3){
+                isShowLevel1 = false;
+                Utils.Hidden(level1);
+            }else if (isShowLevel1&&isShowLevel2&&!isShowLevel3){
+                isShowLevel1 = false;
+                isShowLevel2 = false;
+                Utils.Hidden(level1);
+                Utils.Hidden(level2,250);
+            }else if(isShowLevel1&&isShowLevel2&&isShowLevel3){
+                isShowLevel1 = false;
+                isShowLevel2 = false;
+                isShowLevel3 = false;
+                Utils.Hidden(level1);
+                Utils.Hidden(level2,250);
+                Utils.Hidden(level3,500);
+            }else {
+                isShowLevel1 = true;
+                isShowLevel2 = true;
+                Utils.Show(level1);
+                Utils.Show(level2,150);
+            }
+            return true;
+        }
+     return super.onKeyDown(keyCode,event);
     }
 }
