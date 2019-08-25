@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".selfview.ViewPagerActivity"></activity>
+        <activity android:name=".selfview.PopActivity"></activity>
+        <activity android:name=".selfview.ViewPagerActivity" />
         <activity android:name=".selfview.YoukuActivity" />
         <activity android:name=".selfview.RippleActivity" />
         <activity android:name=".selfview.ZoomActivity" />
