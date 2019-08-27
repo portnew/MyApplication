@@ -78,6 +78,30 @@
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:textSize="20sp" />
+    <Button
+        android:id="@+id/myattr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:background="#5E19CE"
+        android:text="自定义属性"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/viewgroup_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:background="#5E19CE"
+        android:text="ViewGroup仿ViewPager"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
 
 </LinearLayout>

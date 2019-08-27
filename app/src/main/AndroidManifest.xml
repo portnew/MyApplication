@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".selfview.SwitchActivity"></activity>
+        <activity android:name=".selfview.ViewGroupActivity1"></activity>
+        <activity android:name=".selfview.MyAttrActivity" />
+        <activity android:name=".selfview.SwitchActivity" />
         <activity android:name=".selfview.PopActivity" />
         <activity android:name=".selfview.ViewPagerActivity" />
         <activity android:name=".selfview.YoukuActivity" />

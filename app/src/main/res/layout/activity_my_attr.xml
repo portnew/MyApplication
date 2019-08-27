@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zhanghongy="http://schemas.android.com/apk/res-auto"
+    tools:context=".selfview.MyAttrActivity">
+    <com.example.myapplication.selfview.myview.MyAttrView
+        zhanghongy:my_age="100"
+        zhanghongy:my_name="zhanghongy"
+        zhanghongy:my_bg="@drawable/re1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
