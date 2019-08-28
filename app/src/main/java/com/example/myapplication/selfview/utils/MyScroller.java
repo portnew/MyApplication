@@ -2,12 +2,7 @@ package com.example.myapplication.selfview.utils;
 
 import android.os.SystemClock;
 
-/**
- * 作者：杨光福 on 2016/5/16 11:54
- * 微信：yangguangfu520
- * QQ号：541433511
- * 作用：xxxx
- */
+
 public class MyScroller {
 
     /**
@@ -46,7 +41,6 @@ public class MyScroller {
 
     /**
      * 得到坐标
-
      */
     public float getCurrX() {
         return currX;

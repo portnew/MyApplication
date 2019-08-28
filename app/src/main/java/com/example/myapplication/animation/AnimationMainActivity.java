@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.example.myapplication.R;
 
 public class AnimationMainActivity extends AppCompatActivity {
-    Button btn1,btn2;
+    Button btn1,btn2,btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,14 @@ public class AnimationMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AnimationMainActivity.this,CleanActivity.class));
+
+            }
+        });
+        btn3 = findViewById(R.id.animation_3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AnimationMainActivity.this,Rotation3DActivity.class));
 
             }
         });

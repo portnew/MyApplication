@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".selfview.ViewGroupActivity1"></activity>
+        <activity android:name=".animation.Rotate3DTwoActivity"></activity>
+        <activity android:name=".animation.Rotation3DActivity" />
+        <activity android:name=".selfview.ViewGroupActivity1" />
         <activity android:name=".selfview.MyAttrActivity" />
         <activity android:name=".selfview.SwitchActivity" />
         <activity android:name=".selfview.PopActivity" />

@@ -7,7 +7,6 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Scroller;
 
 import com.example.myapplication.selfview.utils.MyScroller;
 
@@ -15,12 +14,12 @@ public class MyViewPager extends ViewGroup {
     /**
      * 手势识别器
      * 1 定义
-     * 2 社会化 把想要的方法重新
+     * 2 实例化 把想要的方法重新
      * 3 onTouchEvent（）把事件传递给手势识别器
      */
     private GestureDetector detector;
     private float startX;
-    private int currentIndex;//当前位置
+    private int currentIndex;//当前位置 索引
     private MyScroller scroller;
 
     public MyViewPager(Context context) {
@@ -38,16 +37,19 @@ public class MyViewPager extends ViewGroup {
             @Override
             public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
 
-                Log.e("ddddd", distanceX + "");
+//                Log.e("ddddd", distanceX + "");
                 //验证往左拖为正，往右为负
+
+                //如果是首末张图片，移动幅度不要过大
                 if (currentIndex==0&&distanceX<0){
-                    scrollBy((int) (distanceX/4),0);
-                }
-                if (currentIndex==getChildCount()-1&&distanceX>0){
-                    scrollBy((int) (distanceX/4),0);
+                    scrollBy((int) (distanceX/6),0);
+                }else if (currentIndex==getChildCount()-1&&distanceX>0){
+                    scrollBy((int) (distanceX/6),0);
                 }else {
                     scrollBy((int) distanceX, 0);
                 }
+                //scrollBy((int) distanceX, 0);
+//                Log.e("CCCCCCCC",currentIndex+"");
                 return true;
             }
         });
