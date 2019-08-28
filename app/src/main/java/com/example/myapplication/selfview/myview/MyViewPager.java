@@ -7,6 +7,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Scroller;
 
 import com.example.myapplication.selfview.utils.MyScroller;
 
@@ -20,7 +21,8 @@ public class MyViewPager extends ViewGroup {
     private GestureDetector detector;
     private float startX;
     private int currentIndex;//当前位置 索引
-    private MyScroller scroller;
+//    private MyScroller scroller;
+    private Scroller scroller;
 
     public MyViewPager(Context context) {
         super(context);
@@ -32,7 +34,7 @@ public class MyViewPager extends ViewGroup {
     }
 
     private void initView(Context context) {
-        scroller = new MyScroller();
+        scroller = new Scroller(context);
         detector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
             @Override
             public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
@@ -80,6 +82,7 @@ public class MyViewPager extends ViewGroup {
                 break;
 
             case MotionEvent.ACTION_UP:
+                Log.e("........",getScrollX()+"");
                 float endX = event.getX();
                 int templateIndex = currentIndex;//下标位置
                 if ((startX - endX) > getWidth() / 2) {
@@ -99,7 +102,7 @@ public class MyViewPager extends ViewGroup {
      * @param templateIndex
      */
 
-    private void scrollToPage(int templateIndex) {
+    public void scrollToPage(int templateIndex) {
         if (templateIndex<0){
             templateIndex = 0;
         }
@@ -111,13 +114,15 @@ public class MyViewPager extends ViewGroup {
         //getScrollY() 是原始值 ，此处就是0
 //        scrollTo(currentIndex*getWidth(),getScrollY());
         int dX = currentIndex*getWidth()-getScrollX();
+
+
         scroller.startScroll(getScrollX(),getScrollY(),dX,0);
         invalidate();;//onDraw();computeScroll();
     }
     @Override
     public void computeScroll() {
 //        super.computeScroll();
-        if( scroller.cuputeScrollOffset()){
+        if( scroller.computeScrollOffset()){
 
             float currX = scroller.getCurrX();
 

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".selfview.ViewGroupActivity1">
-
     <com.example.myapplication.selfview.myview.MyViewPager
         android:id="@+id/my_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-</LinearLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       </RadioGroup>
+
+
+</FrameLayout>
