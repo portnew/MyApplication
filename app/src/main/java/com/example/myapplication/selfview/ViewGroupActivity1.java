@@ -3,6 +3,7 @@ package com.example.myapplication.selfview;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -50,7 +51,16 @@ public class ViewGroupActivity1 extends Activity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
+                myViewPager.scrollToPage(checkedId);
+            }
+        });
 
+        //页面滑动的时候，radiobutton也切换
+        myViewPager.setOnScrollChangeListener(new View.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(View v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                int i = myViewPager.getCurrentIndex();
+                radioGroup.check(i);
             }
         });
     }
