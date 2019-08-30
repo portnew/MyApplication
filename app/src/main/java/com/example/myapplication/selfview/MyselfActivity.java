@@ -10,7 +10,7 @@ import com.example.myapplication.R;
 
 public class MyselfActivity extends AppCompatActivity {
 
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +70,13 @@ public class MyselfActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyselfActivity.this,ViewGroupActivity1.class));
+            }
+        });
+        btn9 = findViewById(R.id.barbar);
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyselfActivity.this,BarActivity.class));
             }
         });
     }

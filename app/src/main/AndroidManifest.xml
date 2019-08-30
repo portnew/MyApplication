@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".animation.Rotate3DTwoActivity"></activity>
+        <activity android:name=".selfview.BarActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".animation.Rotate3DTwoActivity" />
         <activity android:name=".animation.Rotation3DActivity" />
         <activity android:name=".selfview.ViewGroupActivity1" />
         <activity android:name=".selfview.MyAttrActivity" />

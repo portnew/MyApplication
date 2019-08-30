@@ -44,7 +44,7 @@ public class MyViewPager extends ViewGroup {
 
     private void initView(final Context context) {
         scroller = new Scroller(context);
-       /* detector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+        detector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
             @Override
             public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
 
@@ -63,8 +63,8 @@ public class MyViewPager extends ViewGroup {
 //                Log.e("CCCCCCCC",currentIndex+"");
                 return true;
             }
-        });*/
-       detector = new GestureDetector(context, new GestureDetector.OnGestureListener() {
+        });
+       /*detector = new GestureDetector(context, new GestureDetector.OnGestureListener() {
            @Override
            public boolean onDown(MotionEvent e) {
                ToastUtils.showMsg(context,"Down");
@@ -106,7 +106,7 @@ public class MyViewPager extends ViewGroup {
 
                return false;
            }
-       });
+       });*/
     }
 
     @Override
