@@ -10,7 +10,7 @@ import com.example.myapplication.R;
 
 public class MyselfActivity extends AppCompatActivity {
 
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,5 +79,13 @@ public class MyselfActivity extends AppCompatActivity {
                 startActivity(new Intent(MyselfActivity.this,BarActivity.class));
             }
         });
+        btn10 = findViewById(R.id.contact_index);
+        btn10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyselfActivity.this,ContactActivity.class));
+            }
+        });
+
     }
 }
