@@ -49,10 +49,23 @@ public class ContactActivity extends AppCompatActivity {
             public void OnLetterChange(String letter) {
 
                 update(letter);
+                updateListView(letter);
 
             }
         });
     }
+
+    private void updateListView(String word) {
+        for(int i=0;i<persons.size();i++){
+            String listWord = persons.get(i).getPinyin().substring(0,1);//YANGGUANGFU-->Y
+            if (word.equals(listWord)) {
+                //i是listView中的位置
+                listView.setSelection(i);//定位到ListVeiw中的某个位置
+                return;
+            }
+        }
+    }
+
     class IndexAdapter extends BaseAdapter {
 
         @Override
