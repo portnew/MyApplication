@@ -1,4 +1,3 @@
-/*
 package com.example.myapplication.selfview;
 
 import android.annotation.SuppressLint;
@@ -18,6 +17,7 @@ public class MyTestActivity extends AppCompatActivity {
     private float downX;//只赋值一次
     private float downY;
     LinearLayout layout;
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,58 +32,41 @@ public class MyTestActivity extends AppCompatActivity {
                         //1.按下记录坐标
                         downX = startX = event.getX();
                         downY = startY = event.getY();
-                        Log.e("onTouchEvent","onTouchEvent-ACTION_DOWN");
+                        Log.e("onTouchEvent", "onTouchEvent-ACTION_DOWN");
                         break;
                     case MotionEvent.ACTION_MOVE:
-                        Log.e("onTouchEvent","onTouchEvent-ACTION_MOVE");
+                        Log.e("onTouchEvent", "onTouchEvent-ACTION_MOVE");
                         //2.记录结束值
                         float endX = event.getX();
-                        float endY = event.getY();
                         //3.计算偏移量
                         float distanceX = endX - startX;
-                        Log.e("distanceX",distanceX+"");
+                        Log.e("distanceX=endX - startX", distanceX  + "");
 
+                        Log.e("v.getScrollX()", v.getScrollX()  + "");
                         int toScrollX = (int) (v.getScrollX() - distanceX);
 
-                        Log.e("toScrollX",toScrollX+"");
+                        Log.e("toScrollX", toScrollX + "");
 
 
                         if (toScrollX < 0) {
                             toScrollX = 0;
-                        } else if (toScrollX > menuWidth) {
-                            toScrollX = menuWidth;
+                        } else if (toScrollX > 200) {
+                            toScrollX = 200;
                         }
 
                         v.scrollTo(toScrollX, v.getScrollY());
 
                         startX = event.getX();
                         startY = event.getY();
-                        //在X轴和Y轴滑动的距离
-                      */
-/*  float DX = Math.abs(endX-downX);
-                        float DY = Math.abs(endY-downY);
-                        if(DX > DY&&DX>8){
-                            //水平方向滑动
-                            //响应侧滑
-                            //反拦截-事件给SlideLayout
-                            getParent().requestDisallowInterceptTouchEvent(true);
-                        }
 
-*//*
 
                         break;
                     case MotionEvent.ACTION_UP:
-                        */
-/*Log.e(TAG,"SlideLayout-onTouchEvent-ACTION_UP");
-                        int totalScrollX = getScrollX();//偏移量
-                        if(totalScrollX < menuWidth/2){
-                            //关闭Menu
-                            closeMenu();
-                        }else{
-                            //打开Menu
-                            openMenu();
-                        }*//*
 
                         break;
                 }
-        });}*/
+                return true;
+            }
+        });
+    }
+}
