@@ -10,7 +10,7 @@ import com.example.myapplication.R;
 
 public class MyselfActivity extends AppCompatActivity {
 
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,6 +84,20 @@ public class MyselfActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyselfActivity.this,ContactActivity.class));
+            }
+        });
+        btn11 = findViewById(R.id.slide_delete);
+        btn11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyselfActivity.this,SlideDeleteActivity.class));
+            }
+        });
+        btn12 = findViewById(R.id.mytest);
+        btn12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyselfActivity.this,MyTestActivity.class));
             }
         });
 

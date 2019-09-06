@@ -11,10 +11,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-
 import com.example.myapplication.R;
-
-import java.net.InterfaceAddress;
 
 /**
  * 快速索引
@@ -29,15 +26,12 @@ public class IndexView extends View {
     private int index=-1;
     private Paint paint;
     private OnLetterChangeListener listener;
-
     private String[] letters = {"A", "B", "C", "D", "E", "F", "G", "H", "I",
             "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
             "W", "X", "Y", "Z"};
     public IndexView(Context context) {
         super(context);
     }
-
-
 
     @SuppressLint("ResourceAsColor")
     public IndexView(Context context, @Nullable AttributeSet attrs) {
@@ -71,9 +65,10 @@ public class IndexView extends View {
             int letterWidth = bounds.width();
             int letterHeight = bounds.height();
 
+            //每个字母的坐标，定位是左下角
             float letterX = itemWidth/2 - letterWidth/2;
             float letterY = itemHeight/2 + letterHeight/2 + i * itemHeight;
-            //点击变色
+            //点击变色，变大
             if (i==index){
                 paint.setColor(Color.RED);
                 paint.setTextSize(70);
@@ -104,7 +99,7 @@ public class IndexView extends View {
                 index = -1;
                 break;
         }
-        invalidate();
+        invalidate();//强制执行onDraw方法
         return true;
     }
 

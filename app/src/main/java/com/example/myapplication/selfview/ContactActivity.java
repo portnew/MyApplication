@@ -149,6 +149,10 @@ public class ContactActivity extends AppCompatActivity {
         persons.add(new Person("杨光福"));
         persons.add(new Person("胡继群"));
         persons.add(new Person("刘畅"));
+        persons.add(new Person("崔晓飞"));
+        persons.add(new Person("崔器"));
+        persons.add(new Person("懂杰"));
+        persons.add(new Person("冯远征"));
 
         persons.add(new Person("钟泽兴"));
         persons.add(new Person("尹革新"));
