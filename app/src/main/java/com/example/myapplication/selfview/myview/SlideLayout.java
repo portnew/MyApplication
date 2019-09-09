@@ -106,7 +106,8 @@ public class SlideLayout extends FrameLayout {
                     toScrollX = menuWidth;
                 }
 
-                scrollTo(toScrollX, getScrollY());
+//                scrollTo(toScrollX, getScrollY());
+                scrollBy((int) -distanceX,0);
 
                 startX = event.getX();
                 startY = event.getY();

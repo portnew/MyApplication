@@ -12,5 +12,28 @@
     <com.example.myapplication.selfview.myview.SlideLayout
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#44000000"
+            android:gravity="center"
+            android:text="Content"
+            android:textColor="#000000"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#22000000"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="#ff0000"
+            android:textSize="25sp">
+
+        </TextView>
+    </com.example.myapplication.selfview.myview.SlideLayout>
 </RelativeLayout>
