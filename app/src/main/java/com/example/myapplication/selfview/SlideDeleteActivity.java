@@ -95,7 +95,7 @@ public class SlideDeleteActivity extends AppCompatActivity {
                 @Override
                 public void onClose(SlideLayout layout) {
                     if (slideLayout == layout){
-                        slideLayout = null;
+//                        slideLayout = null;
                     }
                 }
 
