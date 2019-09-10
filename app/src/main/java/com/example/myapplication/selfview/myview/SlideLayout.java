@@ -107,23 +107,19 @@ public class SlideLayout extends FrameLayout {
                 Log.e("333toScrollX 目标值",toScrollX+"");
 
 
-
-
                 scrollTo(toScrollX, getScrollY());
-
-
 
                 startX = event.getX();
                 startY = event.getY();
-                //在X轴和Y轴滑动的距离
-//                float DX = Math.abs(endX-downX);
-//                float DY = Math.abs(endY-downY);
-//                if(DX > DY&&DX>8){
-//                    //水平方向滑动
-//                    //响应侧滑
-//                    //反拦截-事件给SlideLayout
-//                    getParent().requestDisallowInterceptTouchEvent(true);
-//                }
+//                在X轴和Y轴滑动的距离
+                float DX = Math.abs(endX-downX);
+                float DY = Math.abs(endY-downY);
+                if(DX > DY&&DX>8){
+                    //水平方向滑动
+                    //响应侧滑
+                    //反拦截-事件给SlideLayout
+                    getParent().requestDisallowInterceptTouchEvent(true);
+                }
 
 
                 break;
@@ -162,18 +158,12 @@ public class SlideLayout extends FrameLayout {
             case MotionEvent.ACTION_MOVE:
                 //2.记录结束值
                 float endX = event.getX();
-                float endY = event.getY();
-                //3.计算偏移量
-                float distanceX = endX - startX;
 
                 startX = event.getX();
-                //在X轴和Y轴滑动的距离
                 float DX = Math.abs(endX-downX);
                 if(DX>8){
                     intercept = true;
                 }
-
-
                 break;
             case MotionEvent.ACTION_UP:
                 break;
