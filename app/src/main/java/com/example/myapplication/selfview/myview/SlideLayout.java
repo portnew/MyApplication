@@ -84,20 +84,17 @@ public class SlideLayout extends FrameLayout {
                 //1.按下记录坐标
                  downX = startX = event.getX();
                  downY = startY = event.getY();
-                Log.e(TAG,"SlideLayout-onTouchEvent-ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.e(TAG,"SlideLayout-onTouchEvent-ACTION_MOVE");
                 //2.记录结束值
                 float endX = event.getX();
                 float endY = event.getY();
-                //3.计算偏移量
-                float distanceX = endX - startX;
-                Log.e("distanceX",distanceX+"");
 
-                int toScrollX = (int) (getScrollX() - distanceX);
+                //3.计算偏移量 初始-结束
+                float distanceX = startX - endX;
 
-                Log.e("toScrollX",toScrollX+"");
+                int toScrollX = (int) (getScrollX() + distanceX);
+
 
 
                 if (toScrollX < 0) {
@@ -105,26 +102,32 @@ public class SlideLayout extends FrameLayout {
                 } else if (toScrollX > menuWidth) {
                     toScrollX = menuWidth;
                 }
+                Log.e("111getScrollX()",getScrollX()+"");
+                Log.e("222distanceX",distanceX+"");
+                Log.e("333toScrollX 目标值",toScrollX+"");
 
-//                scrollTo(toScrollX, getScrollY());
-                scrollBy((int) -distanceX,0);
+
+
+
+                scrollTo(toScrollX, getScrollY());
+
+
 
                 startX = event.getX();
                 startY = event.getY();
                 //在X轴和Y轴滑动的距离
-                float DX = Math.abs(endX-downX);
-                float DY = Math.abs(endY-downY);
-                if(DX > DY&&DX>8){
-                    //水平方向滑动
-                    //响应侧滑
-                    //反拦截-事件给SlideLayout
-                    getParent().requestDisallowInterceptTouchEvent(true);
-                }
+//                float DX = Math.abs(endX-downX);
+//                float DY = Math.abs(endY-downY);
+//                if(DX > DY&&DX>8){
+//                    //水平方向滑动
+//                    //响应侧滑
+//                    //反拦截-事件给SlideLayout
+//                    getParent().requestDisallowInterceptTouchEvent(true);
+//                }
 
 
                 break;
             case MotionEvent.ACTION_UP:
-                Log.e(TAG,"SlideLayout-onTouchEvent-ACTION_UP");
                 int totalScrollX = getScrollX();//偏移量
                 if(totalScrollX < menuWidth/2){
                     //关闭Menu
@@ -152,13 +155,11 @@ public class SlideLayout extends FrameLayout {
             case MotionEvent.ACTION_DOWN:
                 //1.按下记录坐标
                 downX = startX = event.getX();
-                Log.e(TAG,"SlideLayout-onTouchEvent-ACTION_DOWN");
                 if(onStateChangeListenter != null){
                     onStateChangeListenter.onDown(this);
                 }
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.e(TAG,"SlideLayout-onTouchEvent-ACTION_MOVE");
                 //2.记录结束值
                 float endX = event.getX();
                 float endY = event.getY();
