@@ -90,31 +90,39 @@ public class SlideDeleteActivity extends AppCompatActivity {
                 }
             });
 
-            final SlideLayout slideLayout = (SlideLayout) convertView;
-            slideLayout.setOnStateChangeListenter(new SlideLayout.OnStateChangeListenter() {
-                @Override
-                public void onClose(SlideLayout layout) {
-                    if (slideLayout == layout){
-//                        slideLayout = null;
-                    }
-                }
+            SlideLayout slideLayout = (SlideLayout) convertView;
+            slideLayout.setOnStateChangeListenter(new MyOnStateChangeListener());
 
-                @Override
-                public void onDown(SlideLayout layout) {
-
-                }
-
-                @Override
-                public void onOpen(SlideLayout layout) {
-
-                }
-            });
             return convertView;
         }
     }
     static class ViewHolder{
         TextView content;
         TextView menu;
+    }
+    private SlideLayout slideLayout;
+
+    class MyOnStateChangeListener implements SlideLayout.OnStateChangeListenter {
+
+        @Override
+        public void onClose(SlideLayout layout) {
+            if(slideLayout ==layout){
+                slideLayout = null;
+            }
+        }
+
+        @Override
+        public void onDown(SlideLayout layout) {
+            if(slideLayout != null && slideLayout!=layout){
+                slideLayout.closeMenu();
+            }
+
+        }
+
+        @Override
+        public void onOpen(SlideLayout layout) {
+            slideLayout = layout;
+        }
     }
 }
 

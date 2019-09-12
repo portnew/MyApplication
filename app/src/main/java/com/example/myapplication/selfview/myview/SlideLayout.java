@@ -112,14 +112,18 @@ public class SlideLayout extends FrameLayout {
                 startX = event.getX();
                 startY = event.getY();
 //                在X轴和Y轴滑动的距离
+//                当在X轴有滑动时，ListView就不再滚动
                 float DX = Math.abs(endX-downX);
                 float DY = Math.abs(endY-downY);
-                if(DX > DY&&DX>8){
+                if (DX > 5){
+                    getParent().requestDisallowInterceptTouchEvent(true);
+                }
+               /* if(DX > DY&&DX>8){
                     //水平方向滑动
                     //响应侧滑
                     //反拦截-事件给SlideLayout
                     getParent().requestDisallowInterceptTouchEvent(true);
-                }
+                }*/
 
 
                 break;
